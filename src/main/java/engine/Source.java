@@ -1,4 +1,4 @@
-package org.ssa;
+package engine;
 
 /**
  *	A source of products

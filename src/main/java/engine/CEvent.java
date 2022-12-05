@@ -4,7 +4,7 @@
  *	@author Joel Karel
  *	@version %I%, %G%
  */
-package org.ssa;
+package engine;
 
 public class CEvent
 {
