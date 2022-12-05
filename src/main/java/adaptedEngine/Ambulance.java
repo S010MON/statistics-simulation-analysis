@@ -95,11 +95,9 @@ public class Ambulance extends Machine implements CProcess, ProductAcceptor
 		product=null;
 		// set machine status to idle
 		status='i';
-		// Check the queue, if it returns false then there is nobody to pickup, so return to hub
+		// Check the queue, if it returns false then there is nobody to pickup, so return to hub using TravelTime class
 		if(!queue.askProduct(this) && base == Location.HUB)
-		{
-
-		}
+			giveProduct(new TravelTime());
 	}
 	
 	/**
@@ -180,11 +178,13 @@ public class Ambulance extends Machine implements CProcess, ProductAcceptor
 
 		// If the ambulance is currently at the hospital, but is usually based at a hub
 		else if (currentLocation == Location.HOSPITAL  && base == Location.HUB)
-			return SPEED * pickupFromHospital();
+			// Return distance travelled + processing time
+			return SPEED * pickupFromHospital() + drawErlang();
 
 		// If the ambulance is collecting a patient from within the region
 		else
-			return SPEED * pickupFromHub();
+			// Return distance travelled + processing time
+			return SPEED * pickupFromHub() + drawErlang();
 	}
 	
 	public double pickupFromHospital() {
@@ -250,5 +250,52 @@ public class Ambulance extends Machine implements CProcess, ProductAcceptor
 		return new Vector(x, y);
 	}
 
+	/**
+	 *
+	 * @param n integer
+	 * Uses recursion
+	 * @return factorial of n
+	 */
+	public static int factorial(int n)
+	{
+		if (n == 0)
+			return 1;
+		else
+			return(n * factorial(n-1));
+	}
 
+	/**
+	 * Generate a random variate from an erlang-3 distribution with lambda = 1.
+	 * Use of inverse-transformation algorithm to draw the random variate with an erlang distribution.
+	 * @return random variate
+	 */
+	public static double drawErlang()
+	{
+		// 2nd Way inverse-transformation algorithm for generating random variates :
+		// Erlang distribution increases from 0 to lambda thus from 0 to 1, we can use the inverse-transformation algorithm :
+
+		// draw a [0,1] uniform distributed number
+		double u = Math.random();
+
+		// Find the CDF of the erlang-3 distribution :
+		int k = 3;
+		double lambda = 1;
+
+		double sum = 0;
+
+		for(int times = 0; times <= k - 1; times++){
+			sum = sum + ( (1/factorial(times)) * Math.exp(-lambda*u) * Math.pow(lambda*u,times));
+		}
+
+		//CDF found
+		double cdf = 1 - sum;
+
+		// Take the inverse
+		double inverse = 1/cdf;
+
+		// Erlang random variate is successfully generated
+		double erlang_variate = inverse;
+
+		return erlang_variate; // erlang R.D.V with (3,1);
+	}
 }
