@@ -8,6 +8,7 @@ package org.ssa;
 
 import adaptedEngine.Ambulance;
 import adaptedEngine.Location;
+import adaptedEngine.Region;
 import adaptedEngine.TriageQueue;
 import engine.CEventList;
 import engine.Queue;
@@ -40,13 +41,13 @@ public class Simulation {
         TriageQueue q7 = new TriageQueue();
 
         // A source for each region that generates random patients within each region
-        Source s1 = new Source(q1,l,"Region 1");
-        Source s2 = new Source(q2,l,"Region 2");
-        Source s3 = new Source(q3,l,"Region 3");
-        Source s4 = new Source(q4,l,"Region 4");
-        Source s5 = new Source(q5,l,"Region 5");
-        Source s6 = new Source(q6,l,"Region 6");
-        Source s7 = new Source(q7,l,"Region 7");
+        Region s1 = new Region(q1,l,"Region 1");
+        Region s2 = new Region(q2,l,"Region 2");
+        Region s3 = new Region(q3,l,"Region 3");
+        Region s4 = new Region(q4,l,"Region 4");
+        Region s5 = new Region(q5,l,"Region 5");
+        Region s6 = new Region(q6,l,"Region 6");
+        Region s7 = new Region(q7,l,"Region 7");
 
         // The hospital is the Sink, once a patient arrives there, they are no
         // longer our problem!
