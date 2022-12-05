@@ -1,8 +1,12 @@
 package org.ssa;
-public class Vector {
 
-    private int x, y;
-    public Vector(int x, int y) {
+public class Vector
+{
+    private double x;
+    private double y;
+
+    public Vector(double x, double y)
+    {
         this.x = x;
         this.y = y;
     }
@@ -13,15 +17,18 @@ public class Vector {
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return "[" + x + "," + y + "]";
     }
 
-    public int getX() {
+    public double getX()
+    {
         return x;
     }
 
-    public int getY() {
+    public double getY()
+    {
         return y;
     }
 
@@ -35,10 +42,10 @@ public class Vector {
         return new Vector((x - other.getX()), (y - other.getY()));
     }
 
-    public int manhattan_distance(Vector other)
+    public double manhattan_distance(Vector other)
     {
-        int abs_x = Math.abs(this.x - other.getX());
-        int abs_y = Math.abs(this.y - other.getY());
+        double abs_x = Math.abs(this.x - other.getX());
+        double abs_y = Math.abs(this.y - other.getY());
         return abs_x + abs_y;
     }
 }
