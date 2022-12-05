@@ -9,6 +9,25 @@ package org.ssa;
  */
 public class Machine implements CProcess,ProductAcceptor
 {
+	static double SPEED = 1;
+	// The edges of a hexagon are equal to the radius of the tightest circel around it.
+	static double EDGE_LENGTH = 5;
+	/* Since a hexagon exists of 6 equal triangles with the same edgeLength x as the hexagon,
+	 * the distance from the the center of the hexagon to the edge is x*(0.5*x)*0.5 = x*x/4.
+	 *                ____________
+	 *               /      |     \                 ^   __
+	 *              /       |      \               /|\  |\
+	 *             /        | x*x*4 \             / | \   \
+	 *            /         |        \           /  |  \   \
+	 *            \                  /          /   |   \   x
+	 *             \                /          /    |    \   \
+	 *              \              /          /     |x*x/4\   \
+	 *               \____________/          /______|______\   \ |
+	 *               <------------>         <--------------->  ---
+	 *                    x=5                      x=5
+	 */
+	static double D_TO_EDGE = EDGE_LENGTH*EDGE_LENGTH/4;
+	
 	/** Product that is being handled  */
 	private Product product;
 	/** Eventlist that will manage events */
@@ -106,7 +125,9 @@ public class Machine implements CProcess,ProductAcceptor
 		// set machine status to idle
 		status='i';
 		// Ask the queue for products
-		queue.askProduct(this);
+		if (queue.askProduct(this)) {
+			status='h';
+		}
 	}
 	
 	/**
@@ -166,12 +187,84 @@ public class Machine implements CProcess,ProductAcceptor
 		}
 	}
 
-	public static double drawRandomExponential(double mean)
+	public static double drawPickupAndDeliveryTime()
 	{
 		// draw a [0,1] uniform distributed number
 		double u = Math.random();
 		// Convert it into a exponentially distributed random variate with mean 33
 		double res = -mean*Math.log(u);
 		return res;
+	}
+	
+	public static double drawPickupAndDeliveryTime(){
+		String hubType = name.substring(0,3).toLowerCase();
+		if ((hubType.equals("hos")) || (status == 'h')){
+			return SPEED*pickupFromHospital();
+		}
+		else {
+			return SPEED*pickupFromHub();
+		}
+	}
+	
+	public static double pickupFromHospital() {
+		Vector v = generatePointInHexagon();
+		double x = v.getX();
+		double y = v.getY();
+		double pickupDistance = Math.abs(x) + Math.abs(y);
+		double bringToHospitalDistance = pickupDistance;return pickupDistance + bringToHospitalDistance;
+	}
+	
+	/* To shift the coordinates from the perspective where to hub is (0,0)
+	 * to the perspective where the hospital is (0,0),
+	 * we just ad 2*D_TO_EDGE to the x-coordinate.
+	 *          _________
+	 *         /         \
+	 *        /           \
+	 *       <      *      > /|\            /|\
+	 *        \     |     /   | D_TO_EDGE    |
+	 *         \____|____/   \|/             | 2*D_TO_EDGE
+	 *         /    |    \   /|\             |
+	 *        /     |     \   | D_TO_EDGE    |
+	 *       <      *      > \|/            \|/
+	 *        \           /
+	 *         \_________/
+	 */
+
+	public static double pickupFromHub() {
+		Vector v = generatePointInHexagon();
+		double x = v.getX();
+		double y = v.getY();
+		double pickupDistance = Math.abs(x) + Math.abs(y);
+		double bringToHospitalDistance = Math.abs(x+2*D_TO_EDGE) + Math.abs(y);
+		return pickupDistance + bringToHospitalDistance;
+	}
+
+	/* The center of the hexagon is (0, 0).
+	 * The method will first draw an (x, y) uniformly from the square around the hexagon.
+	 * As can be seen from the drawing below x ~ U(-D_TO_EDGE, D_TO_EDGE)
+	 *                                   and y ~ U(-EDGE_LENGTH, EDGE_LENGTH).
+	 * If the point is in the hexagon it will be returned if not a new point will be drawn from the square.
+	 *            ______________________  
+	 *            |   /      |     \   | /|\
+	 *            |  /       |      \  |  |
+	 *            | /        | x*x*4 \ |  |
+	 *            |/         |        \|  | 2*D_TO_EDGE
+	 *            |\                  /|  |
+	 *            | \                / |  |
+	 *            |  \              /  |  |
+	 *            |___\____________/___| \|/
+	 *            <-------------------->
+	 *                 2*EDGE_LENGTH
+	 */
+	public static Vector generatePointInHexagon() {
+		double x, y;
+		boolean succesfull = false;
+		do {
+			x = 2*D_TO_EDGE*Math.random() - D_TO_EDGE;
+			y = 2*EDGE_LENGTH*Math.random() - EDGE_LENGTH;
+			// Checks if it is inside or on the hexagon.
+			succesfull = x < EDGE_LENGTH - Math.sqrt(3)*y;
+		} while(!succesfull);
+		return new Vector(x, y);
 	}
 }
