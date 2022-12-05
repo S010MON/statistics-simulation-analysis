@@ -143,7 +143,7 @@ public class Machine implements CProcess,ProductAcceptor
 		// generate duration
 		if(meanProcTime>0)
 		{
-			double duration = drawRandomExponential(meanProcTime);
+			double duration = drawRandom(meanProcTime);
 			// Create a new event in the eventlist
 			double tme = eventlist.getTime();
 			eventlist.add(this,0,tme+duration); //target,type,time
@@ -166,7 +166,7 @@ public class Machine implements CProcess,ProductAcceptor
 		}
 	}
 
-	public static double drawRandomExponential(double mean)
+	public static double drawRandom(double mean)
 	{
 		// draw a [0,1] uniform distributed number
 		double u = Math.random();
