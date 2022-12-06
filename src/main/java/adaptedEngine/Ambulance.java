@@ -271,13 +271,13 @@ public class Ambulance extends Machine implements CProcess, ProductAcceptor
 	 */
 	public static double drawErlang()
 	{
-		// 2nd Way inverse-transformation algorithm for generating random variates :
-		// Erlang distribution increases from 0 to lambda thus from 0 to 1, we can use the inverse-transformation algorithm :
+		// 2nd Way inverse-transformation algorithm for generating random variates 
+		// Erlang distribution increases from 0 to lambda thus from 0 to 1, we can use the inverse-transformation algorithm 
 
 		// draw a [0,1] uniform distributed number
 		double u = Math.random();
 
-		// Find the CDF of the erlang-3 distribution :
+		// Find the CDF of the erlang-3 distribution 
 		int k = 3;
 		double lambda = 1;
 
