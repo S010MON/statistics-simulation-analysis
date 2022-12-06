@@ -1,4 +1,4 @@
-package org.ssa;
+package engine;
 
 import java.util.ArrayList;
 /**
@@ -6,7 +6,7 @@ import java.util.ArrayList;
  *	@author Joel Karel
  *	@version %I%, %G%
  */
-class Product
+public class Product
 {
 	/** Stamps for the products */
 	private ArrayList<Double> times;
@@ -16,7 +16,6 @@ class Product
 	/** 
 	*	Constructor for the product
 	*	Mark the time at which it is created
-	*	@param create The current time
 	*/
 	public Product()
 	{

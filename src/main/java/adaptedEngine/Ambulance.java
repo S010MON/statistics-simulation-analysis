@@ -1,19 +1,20 @@
-package org.ssa;
+package adaptedEngine;
 
-
+import engine.*;
+import org.ssa.Vector;
 
 /**
  *	Machine in a factory
  *	@author Joel Karel
  *	@version %I%, %G%
  */
-public class Machine implements CProcess,ProductAcceptor
+public class Ambulance extends Machine implements CProcess, ProductAcceptor
 {
 	static double SPEED = 1;
 	// The edges of a hexagon are equal to the radius of the tightest circel around it.
 	static double EDGE_LENGTH = 5;
 	/* Since a hexagon exists of 6 equal triangles with the same edgeLength x as the hexagon,
-	 * the distance from the the center of the hexagon to the edge is x*(0.5*x)*0.5 = x*x/4.
+	 * the distance from the center of the hexagon to the edge is x*(0.5*x)*0.5 = x*x/4.
 	 *                ____________
 	 *               /      |     \                 ^   __
 	 *              /       |      \               /|\  |\
@@ -26,27 +27,11 @@ public class Machine implements CProcess,ProductAcceptor
 	 *               <------------>         <--------------->  ---
 	 *                    x=5                      x=5
 	 */
-	static double D_TO_EDGE = EDGE_LENGTH*EDGE_LENGTH/4;
-	
-	/** Product that is being handled  */
-	private Product product;
-	/** Eventlist that will manage events */
-	private final CEventList eventlist;
-	/** Queue from which the machine has to take products */
-	private Queue queue;
-	/** Sink to dump products */
-	private ProductAcceptor sink;
-	/** Status of the machine (b=busy, i=idle) */
-	private char status;
-	/** Machine name */
-	private final String name;
-	/** Mean processing time */
-	private double meanProcTime;
-	/** Processing times (in case pre-specified) */
-	private double[] processingTimes;
-	/** Processing time iterator */
-	private int procCnt;
-	
+	static double D_TO_EDGE = EDGE_LENGTH * EDGE_LENGTH/4;
+
+	private Location base;
+	private Location currentLocation;
+
 
 	/**
 	*	Constructor
@@ -56,15 +41,11 @@ public class Machine implements CProcess,ProductAcceptor
 	*	@param e	Eventlist that will manage events
 	*	@param n	The name of the machine
 	*/
-	public Machine(Queue q, ProductAcceptor s, CEventList e, String n)
+	public Ambulance(Queue q, ProductAcceptor s, CEventList e, String n, Location b)
 	{
-		status='i';
-		queue=q;
-		sink=s;
-		eventlist=e;
-		name=n;
-		meanProcTime=30;
-		queue.askProduct(this);
+		super(q, s, e, n);
+		base = b;
+		currentLocation = base;
 	}
 
 	/**
@@ -74,17 +55,13 @@ public class Machine implements CProcess,ProductAcceptor
 	*	@param s	Where to send the completed products
 	*	@param e	Eventlist that will manage events
 	*	@param n	The name of the machine
-	*        @param m	Mean processing time
+	*   @param m	Mean processing time
 	*/
-	public Machine(Queue q, ProductAcceptor s, CEventList e, String n, double m)
+	public Ambulance(Queue q, ProductAcceptor s, CEventList e, String n, double m, Location b)
 	{
-		status='i';
-		queue=q;
-		sink=s;
-		eventlist=e;
-		name=n;
-		meanProcTime=m;
-		queue.askProduct(this);
+		super(q, s, e, n, m);
+		base = b;
+		currentLocation = base;
 	}
 	
 	/**
@@ -94,19 +71,13 @@ public class Machine implements CProcess,ProductAcceptor
 	*	@param s	Where to send the completed products
 	*	@param e	Eventlist that will manage events
 	*	@param n	The name of the machine
-	*        @param st	service times
+	*   @param st	service times
 	*/
-	public Machine(Queue q, ProductAcceptor s, CEventList e, String n, double[] st)
+	public Ambulance(Queue q, ProductAcceptor s, CEventList e, String n, double[] st, Location b)
 	{
-		status='i';
-		queue=q;
-		sink=s;
-		eventlist=e;
-		name=n;
-		meanProcTime=-1;
-		processingTimes=st;
-		procCnt=0;
-		queue.askProduct(this);
+		super(q, s, e, n, st);
+		base = b;
+		currentLocation = base;
 	}
 
 	/**
@@ -117,17 +88,16 @@ public class Machine implements CProcess,ProductAcceptor
 	public void execute(int type, double tme)
 	{
 		// show arrival
-		System.out.println("Product finished at time = " + tme);
+		System.out.println("Patient delivered at time = " + tme);
 		// Remove product from system
-		product.stamp(tme,"Production complete",name);
+		product.stamp(tme,"Task complete",name);
 		sink.giveProduct(product);
 		product=null;
 		// set machine status to idle
 		status='i';
-		// Ask the queue for products
-		if (queue.askProduct(this)) {
-			status='h';
-		}
+		// Check the queue, if it returns false then there is nobody to pickup, so return to hub using TravelTime class
+		if(!queue.askProduct(this) && base == Location.HUB)
+			giveProduct(new TravelTime());
 	}
 	
 	/**
@@ -139,12 +109,25 @@ public class Machine implements CProcess,ProductAcceptor
 	public boolean giveProduct(Product p)
 	{
 		// Only accept something if the machine is idle
-		if(status=='i')
+		if(status == 'i' && p instanceof TravelTime)
+		{
+			// Set status to traveling
+			status = 't';
+			// accept the product
+			product = p;
+			// mark starting time
+			product.stamp(eventlist.getTime(), "Ambulance return to hub", name);
+			// start production
+			startProduction();
+			// Flag that the product has arrived
+			return true;
+		}
+		else if(status=='i')
 		{
 			// accept the product
 			product=p;
 			// mark starting time
-			product.stamp(eventlist.getTime(),"Production started",name);
+			product.stamp(eventlist.getTime(),"Ambulance dispatched",name);
 			// start production
 			startProduction();
 			// Flag that the product has arrived
@@ -153,7 +136,7 @@ public class Machine implements CProcess,ProductAcceptor
 		// Flag that the product has been rejected
 		else return false;
 	}
-	
+
 	/**
 	*	Starting routine for the production
 	*	Start the handling of the current product with an exponentionally distributed processingtime with average 30
@@ -164,7 +147,7 @@ public class Machine implements CProcess,ProductAcceptor
 		// generate duration
 		if(meanProcTime>0)
 		{
-			double duration = drawRandomExponential(meanProcTime);
+			double duration = drawPickupAndDeliveryTime();
 			// Create a new event in the eventlist
 			double tme = eventlist.getTime();
 			eventlist.add(this,0,tme+duration); //target,type,time
@@ -187,36 +170,35 @@ public class Machine implements CProcess,ProductAcceptor
 		}
 	}
 
-	public static double drawPickupAndDeliveryTime()
+	public double drawPickupAndDeliveryTime()
 	{
-		// draw a [0,1] uniform distributed number
-		double u = Math.random();
-		// Convert it into a exponentially distributed random variate with mean 33
-		double res = -mean*Math.log(u);
-		return res;
+		// If the Ambulance is returning to hub (travel = t)
+		if(status == 't')
+			return 2 * D_TO_EDGE;
+
+		// If the ambulance is currently at the hospital, but is usually based at a hub
+		else if (currentLocation == Location.HOSPITAL  && base == Location.HUB)
+			// Return distance travelled + processing time
+			return SPEED * pickupFromHospital() + drawErlang();
+
+		// If the ambulance is collecting a patient from within the region
+		else
+			// Return distance travelled + processing time
+			return SPEED * pickupFromHub() + drawErlang();
 	}
 	
-	public static double drawPickupAndDeliveryTime(){
-		String hubType = name.substring(0,3).toLowerCase();
-		if ((hubType.equals("hos")) || (status == 'h')){
-			return SPEED*pickupFromHospital();
-		}
-		else {
-			return SPEED*pickupFromHub();
-		}
-	}
-	
-	public static double pickupFromHospital() {
+	public double pickupFromHospital() {
 		Vector v = generatePointInHexagon();
 		double x = v.getX();
 		double y = v.getY();
 		double pickupDistance = Math.abs(x) + Math.abs(y);
-		double bringToHospitalDistance = pickupDistance;return pickupDistance + bringToHospitalDistance;
+		double bringToHospitalDistance = pickupDistance;
+		return pickupDistance + bringToHospitalDistance;
 	}
 	
 	/* To shift the coordinates from the perspective where to hub is (0,0)
 	 * to the perspective where the hospital is (0,0),
-	 * we just ad 2*D_TO_EDGE to the x-coordinate.
+	 * we just add 2*D_TO_EDGE to the x-coordinate.
 	 *          _________
 	 *         /         \
 	 *        /           \
@@ -230,7 +212,7 @@ public class Machine implements CProcess,ProductAcceptor
 	 *         \_________/
 	 */
 
-	public static double pickupFromHub() {
+	public double pickupFromHub() {
 		Vector v = generatePointInHexagon();
 		double x = v.getX();
 		double y = v.getY();
@@ -256,7 +238,7 @@ public class Machine implements CProcess,ProductAcceptor
 	 *            <-------------------->
 	 *                 2*EDGE_LENGTH
 	 */
-	public static Vector generatePointInHexagon() {
+	public Vector generatePointInHexagon() {
 		double x, y;
 		boolean succesfull = false;
 		do {
@@ -266,5 +248,54 @@ public class Machine implements CProcess,ProductAcceptor
 			succesfull = x < EDGE_LENGTH - Math.sqrt(3)*y;
 		} while(!succesfull);
 		return new Vector(x, y);
+	}
+
+	/**
+	 *
+	 * @param n integer
+	 * Uses recursion
+	 * @return factorial of n
+	 */
+	public static int factorial(int n)
+	{
+		if (n == 0)
+			return 1;
+		else
+			return(n * factorial(n-1));
+	}
+
+	/**
+	 * Generate a random variate from an erlang-3 distribution with lambda = 1.
+	 * Use of inverse-transformation algorithm to draw the random variate with an erlang distribution.
+	 * @return random variate
+	 */
+	public static double drawErlang()
+	{
+		// 2nd Way inverse-transformation algorithm for generating random variates 
+		// Erlang distribution increases from 0 to lambda thus from 0 to 1, we can use the inverse-transformation algorithm 
+
+		// draw a [0,1] uniform distributed number
+		double u = Math.random();
+
+		// Find the CDF of the erlang-3 distribution 
+		int k = 3;
+		double lambda = 1;
+
+		double sum = 0;
+
+		for(int times = 0; times <= k - 1; times++){
+			sum = sum + ( (1/factorial(times)) * Math.exp(-lambda*u) * Math.pow(lambda*u,times));
+		}
+
+		//CDF found
+		double cdf = 1 - sum;
+
+		// Take the inverse
+		double inverse = 1/cdf;
+
+		// Erlang random variate is successfully generated
+		double erlang_variate = inverse;
+
+		return erlang_variate; // erlang R.D.V with (3,1);
 	}
 }
