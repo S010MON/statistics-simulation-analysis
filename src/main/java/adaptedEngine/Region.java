@@ -36,7 +36,7 @@ public class Region extends Source
         // generate duration
         if(meanArrTime>0)
         {
-            double duration = drawRandomExponential(meanArrTime);
+            double duration = drawPoisson(meanArrTime);
             // Create a new event in the eventlist
             list.add(this,0,tme+duration); //target,type,time
         }
@@ -53,4 +53,23 @@ public class Region extends Source
             }
         }
     }
+    
+    /**
+	 * 
+	 * @param mean a double - time t in hours
+	 * function : time varying poisson process
+	 * @return rate of arrival - inter arrival time
+	 */
+	public static double drawPoisson(double mean){ // time measured in hours
+
+		double lambda = 3 - (2*Math.sin((5*(Math.PI+mean))/(6*Math.PI)));
+
+		// Useful Information :
+		// Mean is : lambda * mean
+		// If we need to divide each arrival individually, probability is : (lambda*mean)/nb_of_observations
+		// Number of events = Math.exp(-lambda*mean)*((Math.pow(lambda*mean,nb_of_observations))/factorial(nb_of_observations))
+		
+		// This is the rate of arrival <--> inter-arrival times IN HOURS
+		return lambda; 
+	}
 }
