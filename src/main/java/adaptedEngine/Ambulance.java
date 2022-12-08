@@ -31,6 +31,7 @@ public class Ambulance extends Machine implements CProcess, ProductAcceptor
 
 	private Location base;
 	private Location currentLocation;
+	private Shift shift;
 
 
 	/**
@@ -41,11 +42,12 @@ public class Ambulance extends Machine implements CProcess, ProductAcceptor
 	*	@param e	Eventlist that will manage events
 	*	@param n	The name of the machine
 	*/
-	public Ambulance(Queue q, ProductAcceptor s, CEventList e, String n, Location b)
+	public Ambulance(Queue q, ProductAcceptor s, CEventList e, String n, Location b, Shift shift)
 	{
 		super(q, s, e, n);
 		base = b;
 		currentLocation = base;
+		this.shift = shift;
 	}
 
 	/**
@@ -57,11 +59,12 @@ public class Ambulance extends Machine implements CProcess, ProductAcceptor
 	*	@param n	The name of the machine
 	*   @param m	Mean processing time
 	*/
-	public Ambulance(Queue q, ProductAcceptor s, CEventList e, String n, double m, Location b)
+	public Ambulance(Queue q, ProductAcceptor s, CEventList e, String n, double m, Location b, Shift shift)
 	{
 		super(q, s, e, n, m);
 		base = b;
 		currentLocation = base;
+		this.shift = shift;
 	}
 	
 	/**
@@ -93,8 +96,13 @@ public class Ambulance extends Machine implements CProcess, ProductAcceptor
 		product.stamp(tme,"Task complete",name);
 		sink.giveProduct(product);
 		product=null;
-		// set machine status to idle
-		status='i';
+
+		// If the ambulance is on shift
+		if(shift.available(tme))
+			status = 'i';
+		else
+			status = 'b';
+
 		// Check the queue, if it returns false then there is nobody to pickup, so return to hub using TravelTime class
 		if(!queue.askProduct(this) && base == Location.HUB)
 			giveProduct(new TravelTime());
