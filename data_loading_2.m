@@ -11,7 +11,7 @@ for i = 1:length                                    % For every element in the t
     if D(key, 2) == 0                               % Check if the priority has not already been set 
         D(key, 2) = priority(data.event(i));        % If it hasn't, then set the priority by parsing through the function
     end%if
-end
+end%for
 
 disp(D)
 
