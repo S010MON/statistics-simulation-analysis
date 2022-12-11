@@ -1,520 +1,919 @@
 number,time,event,station
-1,6.386010128009454,New patient priority A1,Region 7
-1,6.386010128009454,Ambulance dispatched,Ambulance 7.1
-1,28.80151224299984,Task complete,Ambulance 7.1
-2,9.772151837173748,New patient priority A1,Region 3
-2,9.772151837173748,Ambulance dispatched,Ambulance 3.1
-2,30.680476239444907,Task complete,Ambulance 3.1
-3,8.233208210687078,New patient priority A1,Region 7
-3,8.233208210687078,Ambulance dispatched,Ambulance 7.2
-3,31.216162881072083,Task complete,Ambulance 7.2
-4,10.985182364782565,New patient priority A1,Region 7
-4,10.985182364782565,Ambulance dispatched,Ambulance 7.3
-4,40.34671028800561,Task complete,Ambulance 7.3
-5,15.415645763254226,New patient priority A2,Region 4
-5,15.415645763254226,Ambulance dispatched,Ambulance 4.1
-5,43.6883668202106,Task complete,Ambulance 4.1
-6,20.10620641356867,New patient priority A1,Region 7
-6,20.10620641356867,Ambulance dispatched,Ambulance 7.5
-6,44.65140630399668,Task complete,Ambulance 7.5
-7,20.371677822461702,New patient priority A2,Region 4
-7,20.371677822461702,Ambulance dispatched,Ambulance 4.2
-7,44.90488138636203,Task complete,Ambulance 4.2
-8,25.470312469746816,New patient priority B,Region 5
-8,25.470312469746816,Ambulance dispatched,Ambulance 5.5
-8,45.39637097045843,Task complete,Ambulance 5.5
-9,15.12377685045218,New patient priority A1,Region 7
-9,15.12377685045218,Ambulance dispatched,Ambulance 7.4
-9,46.088645535297665,Task complete,Ambulance 7.4
-10,21.673043842786832,New patient priority A1,Region 5
-10,21.673043842786832,Ambulance dispatched,Ambulance 5.3
-10,47.72088291151141,Task complete,Ambulance 5.3
-11,24.083720486732204,New patient priority B,Region 5
-11,24.083720486732204,Ambulance dispatched,Ambulance 5.4
-11,50.125577427392415,Task complete,Ambulance 5.4
-12,17.084071029305925,New patient priority A1,Region 5
-12,17.084071029305925,Ambulance dispatched,Ambulance 5.2
-12,52.18524834528045,Task complete,Ambulance 5.2
-13,23.46383837505415,New patient priority A2,Region 4
-13,23.46383837505415,Ambulance dispatched,Ambulance 4.3
-13,53.47018641347359,Task complete,Ambulance 4.3
-14,26.202290527921033,New patient priority B,Region 4
-14,26.202290527921033,Ambulance dispatched,Ambulance 4.5
-14,54.42409091418425,Task complete,Ambulance 4.5
-15,32.84623336269795,New patient priority A2,Region 6
-15,32.84623336269795,Ambulance dispatched,Ambulance 6.1
-15,55.15012698617055,Task complete,Ambulance 6.1
-16,18.216130069306118,New patient priority B,Region 3
-16,18.216130069306118,Ambulance dispatched,Ambulance 3.3
-16,56.5228112290113,Task complete,Ambulance 3.3
-17,12.417020864246068,New patient priority A2,Region 5
-17,12.417020864246068,Ambulance dispatched,Ambulance 5.1
-17,58.163122800322725,Task complete,Ambulance 5.1
-18,40.75060650910826,New patient priority A1,Region 6
-18,40.75060650910826,Ambulance dispatched,Ambulance 6.3
-18,67.86647798624435,Task complete,Ambulance 6.3
-19,50.35507514122611,New patient priority A1,Region 2
-19,50.35507514122611,Ambulance dispatched,Ambulance 2.5
-19,69.50393619873718,Task complete,Ambulance 2.5
-20,24.441910531196896,New patient priority A1,Region 3
-20,24.441910531196896,Ambulance dispatched,Ambulance 3.5
-20,70.34978500776037,Task complete,Ambulance 3.5
-21,49.30447820111193,New patient priority A1,Region 2
-21,49.30447820111193,Ambulance dispatched,Ambulance 2.4
-21,75.12129104944918,Task complete,Ambulance 2.4
-22,45.77895684316238,New patient priority A1,Region 2
-22,45.77895684316238,Ambulance dispatched,Ambulance 2.2
-22,76.08819825788748,Task complete,Ambulance 2.2
-23,49.152653903779765,New patient priority B,Region 6
-23,55.15012698617055,Ambulance dispatched,Ambulance 6.1
-23,82.00963267466689,Task complete,Ambulance 6.1
-24,45.346165170071544,New patient priority A1,Region 6
-24,45.346165170071544,Ambulance dispatched,Ambulance 6.4
-24,83.21239724514709,Task complete,Ambulance 6.4
-25,13.332325312813683,New patient priority A1,Region 3
-25,13.332325312813683,Ambulance dispatched,Ambulance 3.2
-25,86.12054095541939,Task complete,Ambulance 3.2
-26,41.422430745699515,New patient priority A1,Region 2
-26,41.422430745699515,Ambulance dispatched,Ambulance 2.1
-26,87.3364587279775,Task complete,Ambulance 2.1
-27,25.723651611666323,New patient priority A1,Region 3
-27,30.680476239444907,Ambulance dispatched,Ambulance 3.1
-27,89.19478519366395,Task complete,Ambulance 3.1
-28,26.53983342925504,New patient priority A2,Region 5
-28,58.163122800322725,Ambulance dispatched,Ambulance 5.1
-28,90.86218908451582,Task complete,Ambulance 5.1
-29,72.4819317284293,New patient priority A1,Region 1
-29,72.4819317284293,Ambulance dispatched,Ambulance 1.4
-29,94.48218354274164,Task complete,Ambulance 1.4
-30,73.61055365477402,New patient priority B,Region 1
-30,73.61055365477402,Ambulance dispatched,Ambulance 1.5
-30,97.70871802687824,Task complete,Ambulance 1.5
-31,27.20722705328885,New patient priority B,Region 4
-31,43.6883668202106,Ambulance dispatched,Ambulance 4.1
-31,99.34691963504079,Task complete,Ambulance 4.1
-32,25.065657766603948,New patient priority B,Region 4
-32,25.065657766603948,Ambulance dispatched,Ambulance 4.4
-32,104.65640289156217,Task complete,Ambulance 4.4
-33,50.222829334441414,New patient priority A1,Region 6
-33,82.00963267466689,Ambulance dispatched,Ambulance 6.1
-33,109.46290222081397,Task complete,Ambulance 6.1
-34,51.35791162252533,New patient priority A1,Region 2
-34,87.3364587279775,Ambulance dispatched,Ambulance 2.1
-34,112.22564269008606,Task complete,Ambulance 2.1
-35,27.540204410244538,New patient priority A1,Region 5
-35,90.86218908451582,Ambulance dispatched,Ambulance 5.1
-35,114.0967564564559,Task complete,Ambulance 5.1
-36,70.90552334679974,New patient priority B,Region 1
-36,70.90552334679974,Ambulance dispatched,Ambulance 1.3
-36,131.50685532925266,Task complete,Ambulance 1.3
-37,47.981356368661494,New patient priority A1,Region 2
-37,47.981356368661494,Ambulance dispatched,Ambulance 2.3
-37,132.03956755686002,Task complete,Ambulance 2.3
-38,28.620666333293233,New patient priority A1,Region 5
-38,114.0967564564559,Ambulance dispatched,Ambulance 5.1
-38,137.1105267956708,Task complete,Ambulance 5.1
-39,51.223160042583395,New patient priority A1,Region 6
-39,109.46290222081397,Ambulance dispatched,Ambulance 6.1
-39,145.6267639774027,Task complete,Ambulance 6.1
-40,26.762428400969156,New patient priority A2,Region 3
-40,89.19478519366395,Ambulance dispatched,Ambulance 3.1
-40,149.0597066853018,Task complete,Ambulance 3.1
-41,29.93818151097602,New patient priority B,Region 5
-41,137.1105267956708,Ambulance dispatched,Ambulance 5.1
-41,160.87599813490894,Task complete,Ambulance 5.1
-42,27.76855714719077,New patient priority A1,Region 3
-42,149.0597066853018,Ambulance dispatched,Ambulance 3.1
-42,166.47689379067936,Task complete,Ambulance 3.1
-43,52.30301310066619,New patient priority B,Region 6
-43,145.6267639774027,Ambulance dispatched,Ambulance 6.1
-43,174.01798733853343,Task complete,Ambulance 6.1
-44,23.33870966684919,New patient priority A2,Region 7
-44,28.80151224299984,Ambulance dispatched,Ambulance 7.1
-44,193.27854709801588,Task complete,Ambulance 7.1
-45,53.61918040796885,New patient priority A1,Region 6
-45,174.01798733853343,Ambulance dispatched,Ambulance 6.1
-45,193.279375752573,Task complete,Ambulance 6.1
-46,31.727656913564307,New patient priority B,Region 5
-46,160.87599813490894,Ambulance dispatched,Ambulance 5.1
-46,212.70604135878818,Task complete,Ambulance 5.1
-47,55.40610172290203,New patient priority A2,Region 6
-47,193.279375752573,Ambulance dispatched,Ambulance 6.1
-47,214.17048515487704,Task complete,Ambulance 6.1
-48,28.886534962266698,New patient priority A1,Region 3
-48,166.47689379067936,Ambulance dispatched,Ambulance 3.1
-48,216.51758614445583,Task complete,Ambulance 3.1
-49,24.988756388023138,New patient priority B,Region 7
-49,193.27854709801588,Ambulance dispatched,Ambulance 7.1
-49,222.2267876257437,Task complete,Ambulance 7.1
-50,30.284427800648437,New patient priority B,Region 3
-50,216.51758614445583,Ambulance dispatched,Ambulance 3.1
-50,240.01039867810906,Task complete,Ambulance 3.1
-51,26.14059630850474,New patient priority A1,Region 7
-51,222.2267876257437,Ambulance dispatched,Ambulance 7.1
-51,242.50769410762837,Task complete,Ambulance 7.1
-52,34.378609081194455,New patient priority A2,Region 5
-52,212.70604135878818,Ambulance dispatched,Ambulance 5.1
-52,257.916615723885,Task complete,Ambulance 5.1
-53,32.22502131103065,New patient priority B,Region 3
-53,240.01039867810906,Ambulance dispatched,Ambulance 3.1
-53,268.8139645997246,Task complete,Ambulance 3.1
-54,35.13806425281478,New patient priority A1,Region 3
-54,268.8139645997246,Ambulance dispatched,Ambulance 3.1
-54,295.18323460576335,Task complete,Ambulance 3.1
-55,39.47063527627648,New patient priority A2,Region 3
-55,295.18323460576335,Ambulance dispatched,Ambulance 3.1
-55,342.9641874824958,Task complete,Ambulance 3.1
-56,38.385815904853565,New patient priority B,Region 5
-56,257.916615723885,Ambulance dispatched,Ambulance 5.1
-56,347.9650210463307,Task complete,Ambulance 5.1
-57,44.37671867791576,New patient priority B,Region 3
-57,342.9641874824958,Ambulance dispatched,Ambulance 3.1
-57,368.92828131322244,Task complete,Ambulance 3.1
-58,43.38541939215709,New patient priority A2,Region 5
-58,347.9650210463307,Ambulance dispatched,Ambulance 5.1
-58,383.3129611224485,Task complete,Ambulance 5.1
-59,46.83104206689461,New patient priority B,Region 5
-59,383.3129611224485,Ambulance dispatched,Ambulance 5.1
-59,420.1554392458386,Task complete,Ambulance 5.1
-60,27.14809806400844,New patient priority B,Region 7
-60,242.50769410762837,Ambulance dispatched,Ambulance 7.1
-60,437.78541811436924,Task complete,Ambulance 7.1
-61,28.180628875023704,New patient priority A2,Region 7
-61,437.78541811436924,Ambulance dispatched,Ambulance 7.1
-61,471.79982720636775,Task complete,Ambulance 7.1
-62,48.55907485431762,New patient priority A1,Region 5
-62,420.1554392458386,Ambulance dispatched,Ambulance 5.1
-62,491.9539395893347,Task complete,Ambulance 5.1
-63,28.24563436489077,New patient priority A1,Region 4
-63,99.34691963504079,Ambulance dispatched,Ambulance 4.1
-63,500.3652365874102,Task complete,Ambulance 4.1
-64,29.383663782777703,New patient priority B,Region 7
-64,471.79982720636775,Ambulance dispatched,Ambulance 7.1
-64,509.4328587403785,Task complete,Ambulance 7.1
-65,49.73546584503443,New patient priority A1,Region 5
-65,491.9539395893347,Ambulance dispatched,Ambulance 5.1
-65,511.52645184666517,Task complete,Ambulance 5.1
-66,36.08821778335101,New patient priority A1,Region 6
-66,36.08821778335101,Ambulance dispatched,Ambulance 6.2
-66,525.683885555161,Task complete,Ambulance 6.2
-67,29.46407554600151,New patient priority A1,Region 4
-67,500.3652365874102,Ambulance dispatched,Ambulance 4.1
-67,533.5966102301634,Task complete,Ambulance 4.1
-68,30.95287871593708,New patient priority A1,Region 7
-68,509.4328587403785,Ambulance dispatched,Ambulance 7.1
-68,535.2581872344851,Task complete,Ambulance 7.1
-69,50.74779448979931,New patient priority B,Region 5
-69,511.52645184666517,Ambulance dispatched,Ambulance 5.1
-69,536.5407108327519,Task complete,Ambulance 5.1
-70,62.0537558635033,New patient priority A1,Region 6
-70,525.683885555161,Ambulance dispatched,Ambulance 6.2
-70,549.3849988593839,Task complete,Ambulance 6.2
-71,47.3002314443296,New patient priority A1,Region 3
-71,368.92828131322244,Ambulance dispatched,Ambulance 3.1
-71,552.0964484125909,Task complete,Ambulance 3.1
-72,51.77252973309559,New patient priority A1,Region 5
-72,536.5407108327519,Ambulance dispatched,Ambulance 5.1
-72,554.774346237036,Task complete,Ambulance 5.1
-73,33.209294920412916,New patient priority A1,Region 7
-73,535.2581872344851,Ambulance dispatched,Ambulance 7.1
-73,559.0950674855851,Task complete,Ambulance 7.1
-74,67.0535355318101,New patient priority A2,Region 6
-74,549.3849988593839,Ambulance dispatched,Ambulance 6.2
-74,572.0324379235852,Task complete,Ambulance 6.2
-75,52.95397879209532,New patient priority A1,Region 5
-75,554.774346237036,Ambulance dispatched,Ambulance 5.1
-75,574.2634600800326,Task complete,Ambulance 5.1
-76,48.84651144977156,New patient priority A1,Region 3
-76,552.0964484125909,Ambulance dispatched,Ambulance 3.1
-76,579.0228178319196,Task complete,Ambulance 3.1
-77,36.64105775738212,New patient priority A2,Region 7
-77,559.0950674855851,Ambulance dispatched,Ambulance 7.1
-77,586.3074952174281,Task complete,Ambulance 7.1
-78,70.50894505222111,New patient priority A1,Region 6
-78,572.0324379235852,Ambulance dispatched,Ambulance 6.2
-78,604.4055101681388,Task complete,Ambulance 6.2
-79,41.44808430034887,New patient priority A1,Region 7
-79,586.3074952174281,Ambulance dispatched,Ambulance 7.1
-79,609.8793497907159,Task complete,Ambulance 7.1
-80,72.24072660710925,New patient priority A1,Region 6
-80,604.4055101681388,Ambulance dispatched,Ambulance 6.2
-80,634.4165585733143,Task complete,Ambulance 6.2
-81,49.96564502528566,New patient priority A1,Region 3
-81,579.0228178319196,Ambulance dispatched,Ambulance 3.1
-81,637.1098879668467,Task complete,Ambulance 3.1
-82,50.96814796660776,New patient priority A1,Region 3
-82,637.1098879668467,Ambulance dispatched,Ambulance 3.1
-82,682.4774458160686,Task complete,Ambulance 3.1
-83,73.41829556089436,New patient priority A1,Region 6
-83,634.4165585733143,Ambulance dispatched,Ambulance 6.2
-83,683.7599148450522,Task complete,Ambulance 6.2
-84,52.01457465679692,New patient priority B,Region 3
-84,682.4774458160686,Ambulance dispatched,Ambulance 3.1
-84,704.4029890102323,Task complete,Ambulance 3.1
-85,74.43087369944864,New patient priority B,Region 6
-85,683.7599148450522,Ambulance dispatched,Ambulance 6.2
-85,712.9204047887105,Task complete,Ambulance 6.2
-86,22.37473617683216,New patient priority A2,Region 3
-86,22.37473617683216,Ambulance dispatched,Ambulance 3.4
-86,714.8483130313546,Task complete,Ambulance 3.4
-87,45.79457844801539,New patient priority A2,Region 7
-87,609.8793497907159,Ambulance dispatched,Ambulance 7.1
-87,727.2679822306658,Task complete,Ambulance 7.1
-88,75.45527970844394,New patient priority A2,Region 6
-88,712.9204047887105,Ambulance dispatched,Ambulance 6.2
-88,740.7973504699995,Task complete,Ambulance 6.2
-89,53.25317702412522,New patient priority A1,Region 3
-89,704.4029890102323,Ambulance dispatched,Ambulance 3.1
-89,741.8460202581464,Task complete,Ambulance 3.1
-90,54.891677043850336,New patient priority A1,Region 3
-90,741.8460202581464,Ambulance dispatched,Ambulance 3.1
-90,764.7497302331765,Task complete,Ambulance 3.1
-91,76.63578038899001,New patient priority B,Region 6
-91,740.7973504699995,Ambulance dispatched,Ambulance 6.2
-91,783.6052622126937,Task complete,Ambulance 6.2
-92,57.27364094558996,New patient priority A2,Region 3
-92,764.7497302331765,Ambulance dispatched,Ambulance 3.1
-92,803.9076554144846,Task complete,Ambulance 3.1
-93,78.16053446070889,New patient priority A2,Region 6
-93,783.6052622126937,Ambulance dispatched,Ambulance 6.2
-93,842.6865213793673,Task complete,Ambulance 6.2
-94,80.33572973060414,New patient priority A2,Region 6
-94,842.6865213793673,Ambulance dispatched,Ambulance 6.2
-94,861.2804596475155,Task complete,Ambulance 6.2
-95,47.9893848747692,New patient priority A1,Region 7
-95,727.2679822306658,Ambulance dispatched,Ambulance 7.1
-95,892.9765037622714,Task complete,Ambulance 7.1
-96,49.310189237621394,New patient priority A2,Region 7
-96,892.9765037622714,Ambulance dispatched,Ambulance 7.1
-96,912.1257378113226,Task complete,Ambulance 7.1
-97,31.06342103425663,New patient priority A1,Region 4
-97,533.5966102301634,Ambulance dispatched,Ambulance 4.1
-97,950.4948878590421,Task complete,Ambulance 4.1
-98,54.48061453319704,New patient priority A2,Region 5
-98,574.2634600800326,Ambulance dispatched,Ambulance 5.1
-98,966.1330243777167,Task complete,Ambulance 5.1
-99,56.659257522870675,New patient priority B,Region 5
-99,966.1330243777167,Ambulance dispatched,Ambulance 5.1
-99,987.3274264318718,Task complete,Ambulance 5.1
-100,33.37458973304307,New patient priority A1,Region 4
-100,950.4948878590421,Ambulance dispatched,Ambulance 4.1
-100,997.8835192812143,Task complete,Ambulance 4.1
-101,36.89153399928612,New patient priority B,Region 4
-101,997.8835192812143,Ambulance dispatched,Ambulance 4.1
-101,1019.7502315451915,Task complete,Ambulance 4.1
-102,59.96743460308372,New patient priority A2,Region 5
-102,987.3274264318718,Ambulance dispatched,Ambulance 5.1
-102,1037.990744468978,Task complete,Ambulance 5.1
-103,41.751479486421054,New patient priority A1,Region 4
-103,1019.7502315451915,Ambulance dispatched,Ambulance 4.1
-103,1046.8280443927526,Task complete,Ambulance 4.1
-104,83.63836063706682,New patient priority A2,Region 6
-104,861.2804596475155,Ambulance dispatched,Ambulance 6.2
-104,1059.0901376240436,Task complete,Ambulance 6.2
-105,50.360111223083216,New patient priority A1,Region 7
-105,912.1257378113226,Ambulance dispatched,Ambulance 7.1
-105,1062.8959444314908,Task complete,Ambulance 7.1
-106,64.68432044331738,New patient priority B,Region 5
-106,1037.990744468978,Ambulance dispatched,Ambulance 5.1
-106,1072.086282660824,Task complete,Ambulance 5.1
-107,60.89835875687107,New patient priority B,Region 3
-107,803.9076554144846,Ambulance dispatched,Ambulance 3.1
-107,1081.7553083231608,Task complete,Ambulance 3.1
-108,51.36309172824888,New patient priority B,Region 7
-108,1062.8959444314908,Ambulance dispatched,Ambulance 7.1
-108,1083.8830456728638,Task complete,Ambulance 7.1
-109,69.19761993620179,New patient priority B,Region 5
-109,1072.086282660824,Ambulance dispatched,Ambulance 5.1
-109,1096.9367735404173,Task complete,Ambulance 5.1
-110,52.46502999465714,New patient priority A1,Region 7
-110,1083.8830456728638,Ambulance dispatched,Ambulance 7.1
-110,1109.5351412251077,Task complete,Ambulance 7.1
-111,65.81390894570454,New patient priority A2,Region 3
-111,1081.7553083231608,Ambulance dispatched,Ambulance 3.1
-111,1128.954475997292,Task complete,Ambulance 3.1
-112,71.532501069537,New patient priority A1,Region 5
-112,1096.9367735404173,Ambulance dispatched,Ambulance 5.1
-112,1141.2123667623796,Task complete,Ambulance 5.1
-113,53.829118509144976,New patient priority A1,Region 7
-113,1109.5351412251077,Ambulance dispatched,Ambulance 7.1
-113,1152.8320536865529,Task complete,Ambulance 7.1
-114,69.8738079778599,New patient priority A2,Region 3
-114,1128.954475997292,Ambulance dispatched,Ambulance 3.1
-114,1154.0218148742351,Task complete,Ambulance 3.1
-115,71.8828596405579,New patient priority A2,Region 3
-115,1154.0218148742351,Ambulance dispatched,Ambulance 3.1
-115,1174.4037758744057,Task complete,Ambulance 3.1
-116,55.70642411155119,New patient priority A2,Region 7
-116,1152.8320536865529,Ambulance dispatched,Ambulance 7.1
-116,1191.9345889405863,Task complete,Ambulance 7.1
-117,72.8959982456359,New patient priority A1,Region 5
-117,1141.2123667623796,Ambulance dispatched,Ambulance 5.1
-117,1194.9794011336317,Task complete,Ambulance 5.1
-118,73.14672282028658,New patient priority A2,Region 3
-118,1174.4037758744057,Ambulance dispatched,Ambulance 3.1
-118,1224.030014725047,Task complete,Ambulance 3.1
-119,73.95854744892888,New patient priority B,Region 5
-119,1194.9794011336317,Ambulance dispatched,Ambulance 5.1
-119,1224.3576103049663,Task complete,Ambulance 5.1
-120,58.510654090031615,New patient priority A2,Region 7
-120,1191.9345889405863,Ambulance dispatched,Ambulance 7.1
-120,1235.1435926910522,Task complete,Ambulance 7.1
-121,52.45898551632455,New patient priority A1,Region 2
-121,112.22564269008606,Ambulance dispatched,Ambulance 2.1
-121,1242.4312760022942,Task complete,Ambulance 2.1
-122,74.95951427641099,New patient priority A1,Region 5
-122,1224.3576103049663,Ambulance dispatched,Ambulance 5.1
-122,1244.203948272013,Task complete,Ambulance 5.1
-123,76.04684853675803,New patient priority B,Region 5
-123,1244.203948272013,Ambulance dispatched,Ambulance 5.1
-123,1262.55965714447,Task complete,Ambulance 5.1
-124,53.82123138294812,New patient priority A1,Region 2
-124,1242.4312760022942,Ambulance dispatched,Ambulance 2.1
-124,1272.1567428028345,Task complete,Ambulance 2.1
-125,74.18057424446768,New patient priority B,Region 3
-125,1224.030014725047,Ambulance dispatched,Ambulance 3.1
-125,1274.5604475396242,Task complete,Ambulance 3.1
-126,77.37946210360467,New patient priority A2,Region 5
-126,1262.55965714447,Ambulance dispatched,Ambulance 5.1
-126,1282.0103018725606,Task complete,Ambulance 5.1
-127,62.714334096404954,New patient priority A2,Region 7
-127,1235.1435926910522,Ambulance dispatched,Ambulance 7.1
-127,1287.5613918255508,Task complete,Ambulance 7.1
-128,55.69507664125692,New patient priority A2,Region 2
-128,1272.1567428028345,Ambulance dispatched,Ambulance 2.1
-128,1297.0301794070813,Task complete,Ambulance 2.1
-129,75.18866689811432,New patient priority A1,Region 3
-129,1274.5604475396242,Ambulance dispatched,Ambulance 3.1
-129,1298.466797275003,Task complete,Ambulance 3.1
-130,79.19749842252462,New patient priority B,Region 5
-130,1282.0103018725606,Ambulance dispatched,Ambulance 5.1
-130,1324.9358788938282,Task complete,Ambulance 5.1
-131,58.49331640542678,New patient priority B,Region 2
-131,1297.0301794070813,Ambulance dispatched,Ambulance 2.1
-131,1326.1627265930715,Task complete,Ambulance 2.1
-132,81.89857011332055,New patient priority A2,Region 5
-132,1324.9358788938282,Ambulance dispatched,Ambulance 5.1
-132,1351.7869709270433,Task complete,Ambulance 5.1
-133,62.689638090260104,New patient priority A1,Region 2
-133,1326.1627265930715,Ambulance dispatched,Ambulance 2.1
-133,1355.9789697991066,Task complete,Ambulance 2.1
-134,85.97185870307055,New patient priority A1,Region 5
-134,1351.7869709270433,Ambulance dispatched,Ambulance 5.1
-134,1378.7640310327806,Task complete,Ambulance 5.1
-135,90.96606538560519,New patient priority A1,Region 5
-135,1378.7640310327806,Ambulance dispatched,Ambulance 5.1
-135,1397.4200876997359,Task complete,Ambulance 5.1
-136,94.30425194609602,New patient priority A1,Region 5
-136,1397.4200876997359,Ambulance dispatched,Ambulance 5.1
-136,1419.8237471395767,Task complete,Ambulance 5.1
-137,45.97473017679654,New patient priority B,Region 4
-137,1046.8280443927526,Ambulance dispatched,Ambulance 4.1
-137,1449.947133355851,Task complete,Ambulance 4.1
-138,95.99215371549776,New patient priority A1,Region 5
-138,1419.8237471395767,Ambulance dispatched,Ambulance 5.1
-138,1456.68282495845,Task complete,Ambulance 5.1
-139,97.15592049224969,New patient priority B,Region 5
-139,1456.68282495845,Ambulance dispatched,Ambulance 5.1
-139,1489.900309959636,Task complete,Ambulance 5.1
-140,48.08300329206927,New patient priority A1,Region 4
-140,1449.947133355851,Ambulance dispatched,Ambulance 4.1
-140,1500.6998251902194,Task complete,Ambulance 4.1
-141,98.1656731843223,New patient priority B,Region 5
-141,1489.900309959636,Ambulance dispatched,Ambulance 5.1
-141,1514.318782276526,Task complete,Ambulance 5.1
-142,99.19418286696309,New patient priority A2,Region 5
-142,1514.318782276526,Ambulance dispatched,Ambulance 5.1
-142,1548.1832794663899,Task complete,Ambulance 5.1
-143,100.38627571121862,New patient priority A2,Region 5
-143,1548.1832794663899,Ambulance dispatched,Ambulance 5.1
-143,1577.9477618896565,Task complete,Ambulance 5.1
-144,101.93396426183729,New patient priority A2,Region 5
-144,1577.9477618896565,Ambulance dispatched,Ambulance 5.1
-144,1631.8411025668559,Task complete,Ambulance 5.1
-145,67.67831705531148,New patient priority B,Region 7
-145,1287.5613918255508,Ambulance dispatched,Ambulance 7.1
-145,1639.1418214221321,Task complete,Ambulance 7.1
-146,70.80621257175568,New patient priority B,Region 7
-146,1639.1418214221321,Ambulance dispatched,Ambulance 7.1
-146,1665.9582083173357,Task complete,Ambulance 7.1
-147,49.377349108894414,New patient priority A1,Region 4
-147,1500.6998251902194,Ambulance dispatched,Ambulance 4.1
-147,1682.980401779562,Task complete,Ambulance 4.1
-148,72.42011653254286,New patient priority A2,Region 7
-148,1665.9582083173357,Ambulance dispatched,Ambulance 7.1
-148,1692.3855204364247,Task complete,Ambulance 7.1
-149,73.56056006666739,New patient priority A1,Region 7
-149,1692.3855204364247,Ambulance dispatched,Ambulance 7.1
-149,1726.771537338075,Task complete,Ambulance 7.1
-150,74.56610392934617,New patient priority B,Region 7
-150,1726.771537338075,Ambulance dispatched,Ambulance 7.1
-150,1753.7305594944526,Task complete,Ambulance 7.1
-151,50.41967001755457,New patient priority A1,Region 4
-151,1682.980401779562,Ambulance dispatched,Ambulance 4.1
-151,1764.47788208419,Task complete,Ambulance 4.1
-152,104.15111959214754,New patient priority A2,Region 5
-152,1631.8411025668559,Ambulance dispatched,Ambulance 5.1
-152,1771.3304370161652,Task complete,Ambulance 5.1
-153,67.6560541209067,New patient priority A1,Region 2
-153,1355.9789697991066,Ambulance dispatched,Ambulance 2.1
-153,1780.6689632225105,Task complete,Ambulance 2.1
-154,51.4246240248725,New patient priority A2,Region 4
-154,1764.47788208419,Ambulance dispatched,Ambulance 4.1
-154,1782.558846993727,Task complete,Ambulance 4.1
-155,52.537103462503346,New patient priority A2,Region 4
-155,1782.558846993727,Ambulance dispatched,Ambulance 4.1
-155,1810.557972657667,Task complete,Ambulance 4.1
-156,53.92348613504566,New patient priority A1,Region 4
-156,1810.557972657667,Ambulance dispatched,Ambulance 4.1
-156,1834.7100156951878,Task complete,Ambulance 4.1
-157,58.05255937688963,New patient priority A1,Region 6
-157,214.17048515487704,Ambulance dispatched,Ambulance 6.1
-157,1838.0300154513898,Task complete,Ambulance 6.1
-158,107.52086428948617,New patient priority A2,Region 5
-158,1771.3304370161652,Ambulance dispatched,Ambulance 5.1
-158,1839.8306052232886,Task complete,Ambulance 5.1
-159,55.842570765316474,New patient priority A1,Region 4
-159,1834.7100156951878,Ambulance dispatched,Ambulance 4.1
-159,1852.8868078182063,Task complete,Ambulance 4.1
-160,112.28458616231322,New patient priority B,Region 5
-160,1839.8306052232886,Ambulance dispatched,Ambulance 5.1
-160,1868.9660532351058,Task complete,Ambulance 5.1
-161,70.79573401836461,New patient priority A1,Region 2
-161,1780.6689632225105,Ambulance dispatched,Ambulance 2.1
-161,1871.1343904674504,Task complete,Ambulance 2.1
-162,88.35084319342846,New patient priority A2,Region 6
-162,1838.0300154513898,Ambulance dispatched,Ambulance 6.1
-162,1873.1161474484811,Task complete,Ambulance 6.1
-163,116.71676228543443,New patient priority B,Region 5
-163,1868.9660532351058,Ambulance dispatched,Ambulance 5.1
-163,1901.4691596874395,Task complete,Ambulance 5.1
-164,92.87124054524595,New patient priority A1,Region 6
-164,1873.1161474484811,Ambulance dispatched,Ambulance 6.1
-164,1902.2020501892316,Task complete,Ambulance 6.1
-165,75.60295200072802,New patient priority B,Region 7
-165,1753.7305594944526,Ambulance dispatched,Ambulance 7.1
-165,1909.175187201756,Task complete,Ambulance 7.1
-166,58.71879395458298,New patient priority A1,Region 4
-166,1852.8868078182063,Ambulance dispatched,Ambulance 4.1
-166,1914.2919898502407,Task complete,Ambulance 4.1
-167,95.21284516854527,New patient priority A1,Region 6
-167,1902.2020501892316,Ambulance dispatched,Ambulance 6.1
-167,1921.4203092626922,Task complete,Ambulance 6.1
-168,76.3150438496648,New patient priority B,Region 3
-168,1298.466797275003,Ambulance dispatched,Ambulance 3.1
-168,1928.5197107978343,Task complete,Ambulance 3.1
-169,76.81736458997746,New patient priority B,Region 7
-169,1909.175187201756,Ambulance dispatched,Ambulance 7.1
-169,1953.5135093167532,Task complete,Ambulance 7.1
-170,77.73038083991847,New patient priority A2,Region 3
-170,1928.5197107978343,Ambulance dispatched,Ambulance 3.1
-170,1961.410516898688,Task complete,Ambulance 3.1
-171,78.40885004557029,New patient priority B,Region 7
-171,1953.5135093167532,Ambulance dispatched,Ambulance 7.1
-171,1977.049100290636,Task complete,Ambulance 7.1
-172,79.70349637638695,New patient priority A2,Region 3
-172,1961.410516898688,Ambulance dispatched,Ambulance 3.1
-172,1991.7058734168647,Task complete,Ambulance 3.1
-173,96.57839022324507,New patient priority A1,Region 6
-173,1921.4203092626922,Ambulance dispatched,Ambulance 6.1
-173,1996.0429749119407,Task complete,Ambulance 6.1
+1,3.105081090295828,New patient priority B,Region 0
+1,3.105081090295828,Ambulance dispatched,Ambulance 0.1
+1,23.65308420760462,Task complete,Ambulance 0.1
+2,2.0696663113147427,New patient priority A2,Region 0
+2,2.0696663113147427,Ambulance dispatched,Ambulance 0.0
+2,26.01745451827476,Task complete,Ambulance 0.0
+3,3.7097704463672168,New patient priority A1,Region 2
+3,3.7097704463672168,Ambulance dispatched,Ambulance 2.0
+3,29.398293093974438,Task complete,Ambulance 2.0
+4,3.8535899442729757,New patient priority A2,Region 1
+4,3.8535899442729757,Ambulance dispatched,Ambulance 1.1
+4,44.496782791316264,Task complete,Ambulance 1.1
+5,6.042522642803589,New patient priority A2,Region 2
+5,6.042522642803589,Ambulance dispatched,Ambulance 2.2
+5,46.029376051506574,Task complete,Ambulance 2.2
+6,23.368858590700878,New patient priority A1,Region 5
+6,23.368858590700878,Ambulance dispatched,Ambulance 5.2
+6,47.006066175000484,Task complete,Ambulance 5.2
+7,2.8532145394568516,New patient priority B,Region 1
+7,2.8532145394568516,Ambulance dispatched,Ambulance 1.0
+7,55.119115537117686,Task complete,Ambulance 1.0
+8,24.122314509031533,New patient priority A2,Region 4
+8,24.122314509031533,Ambulance dispatched,Ambulance 4.1
+8,55.53354801020938,Task complete,Ambulance 4.1
+9,26.0598606966636,New patient priority A2,Region 3
+9,26.0598606966636,Ambulance dispatched,Ambulance 3.1
+9,55.785074133244876,Task complete,Ambulance 3.1
+10,5.236110319677656,New patient priority A2,Region 0
+10,26.01745451827476,Ambulance dispatched,Ambulance 0.0
+10,58.963316460617094,Task complete,Ambulance 0.0
+11,4.112504407630182,New patient priority B,Region 0
+11,4.112504407630182,Ambulance dispatched,Ambulance 0.2
+11,60.278412310861526,Task complete,Ambulance 0.2
+12,27.071525343737047,New patient priority A1,Region 3
+12,27.071525343737047,Ambulance dispatched,Ambulance 3.2
+12,72.8252532626723,Task complete,Ambulance 3.2
+13,6.251775757002223,New patient priority B,Region 1
+13,55.119115537117686,Ambulance dispatched,Ambulance 1.0
+13,78.15938064700791,Task complete,Ambulance 1.0
+14,59.4094268084177,New patient priority B,Region 6
+14,59.4094268084177,Ambulance dispatched,Ambulance 6.0
+14,80.00479077746401,Task complete,Ambulance 6.0
+15,21.75106023071381,New patient priority B,Region 4
+15,21.75106023071381,Ambulance dispatched,Ambulance 4.0
+15,86.57584035768286,Task complete,Ambulance 4.0
+16,68.69239321253704,New patient priority B,Region 6
+16,68.69239321253704,Ambulance dispatched,Ambulance 6.2
+16,113.06785255213522,Task complete,Ambulance 6.2
+17,26.562775094960315,New patient priority A2,Region 4
+17,86.57584035768286,Ambulance dispatched,Ambulance 4.0
+17,117.05319877084827,Task complete,Ambulance 4.0
+18,8.041523483184243,New patient priority A2,Region 1
+18,78.15938064700791,Ambulance dispatched,Ambulance 1.0
+18,119.28259987818407,Task complete,Ambulance 1.0
+19,71.28525765367962,New patient priority A2,Region 6
+19,80.00479077746401,Ambulance dispatched,Ambulance 6.0
+19,140.26286046032882,Task complete,Ambulance 6.0
+20,27.56341751223636,New patient priority A2,Region 4
+20,117.05319877084827,Ambulance dispatched,Ambulance 4.0
+20,141.65151267842737,Task complete,Ambulance 4.0
+21,10.692954747728393,New patient priority A2,Region 1
+21,119.28259987818407,Ambulance dispatched,Ambulance 1.0
+21,153.33204067620727,Task complete,Ambulance 1.0
+22,72.72762153215922,New patient priority A2,Region 6
+22,140.26286046032882,Ambulance dispatched,Ambulance 6.0
+22,168.8744193868314,Task complete,Ambulance 6.0
+23,28.647373720527767,New patient priority A1,Region 4
+23,141.65151267842737,Ambulance dispatched,Ambulance 4.0
+23,179.9420130151174,Task complete,Ambulance 4.0
+24,14.70080143841282,New patient priority A2,Region 1
+24,153.33204067620727,Ambulance dispatched,Ambulance 1.0
+24,199.96593405250474,Task complete,Ambulance 1.0
+25,73.814260553595,New patient priority A2,Region 6
+25,168.8744193868314,Ambulance dispatched,Ambulance 6.0
+25,231.46725405976676,Task complete,Ambulance 6.0
+26,29.972591481898505,New patient priority A1,Region 4
+26,179.9420130151174,Ambulance dispatched,Ambulance 4.0
+26,249.84486590244194,Task complete,Ambulance 4.0
+27,19.700383125870637,New patient priority A2,Region 1
+27,199.96593405250474,Ambulance dispatched,Ambulance 1.0
+27,258.007939566785,Task complete,Ambulance 1.0
+28,74.81431207971897,New patient priority A1,Region 6
+28,231.46725405976676,Ambulance dispatched,Ambulance 6.0
+28,287.78725436970956,Task complete,Ambulance 6.0
+29,23.144963983005294,New patient priority A2,Region 1
+29,258.007939566785,Ambulance dispatched,Ambulance 1.0
+29,293.6068077962359,Task complete,Ambulance 1.0
+30,24.87259867906067,New patient priority B,Region 1
+30,293.6068077962359,Ambulance dispatched,Ambulance 1.0
+30,317.8417723116786,Task complete,Ambulance 1.0
+31,24.886639903401264,New patient priority A1,Region 3
+31,24.886639903401264,Ambulance dispatched,Ambulance 3.0
+31,320.54003852611913,Task complete,Ambulance 3.0
+32,75.88055550121261,New patient priority A1,Region 6
+32,287.78725436970956,Ambulance dispatched,Ambulance 6.0
+32,323.52443958169647,Task complete,Ambulance 6.0
+33,26.04886456461887,New patient priority A1,Region 1
+33,317.8417723116786,Ambulance dispatched,Ambulance 1.0
+33,339.62249521862424,Task complete,Ambulance 1.0
+34,7.745799496374301,New patient priority B,Region 2
+34,29.398293093974438,Ambulance dispatched,Ambulance 2.0
+34,342.1974161046244,Task complete,Ambulance 2.0
+35,31.77664860928198,New patient priority A1,Region 4
+35,249.84486590244194,Ambulance dispatched,Ambulance 4.0
+35,343.7306801346894,Task complete,Ambulance 4.0
+36,28.09716544327527,New patient priority B,Region 3
+36,320.54003852611913,Ambulance dispatched,Ambulance 3.0
+36,345.7383203531942,Task complete,Ambulance 3.0
+37,34.45322154782654,New patient priority A2,Region 4
+37,343.7306801346894,Ambulance dispatched,Ambulance 4.0
+37,373.02865945738114,Task complete,Ambulance 4.0
+38,77.1660885538215,New patient priority A1,Region 6
+38,323.52443958169647,Ambulance dispatched,Ambulance 6.0
+38,375.190143111327,Task complete,Ambulance 6.0
+39,29.281203543637034,New patient priority A1,Region 3
+39,345.7383203531942,Ambulance dispatched,Ambulance 3.0
+39,377.19272069755846,Task complete,Ambulance 3.0
+40,10.243975669099482,New patient priority B,Region 2
+40,342.1974161046244,Ambulance dispatched,Ambulance 2.0
+40,379.681171742894,Task complete,Ambulance 2.0
+41,27.061166799080457,New patient priority A2,Region 1
+41,339.62249521862424,Ambulance dispatched,Ambulance 1.0
+41,388.47250095952904,Task complete,Ambulance 1.0
+42,38.494426141536835,New patient priority A2,Region 4
+42,373.02865945738114,Ambulance dispatched,Ambulance 4.0
+42,408.4811968747396,Task complete,Ambulance 4.0
+43,30.81297119059598,New patient priority A1,Region 3
+43,377.19272069755846,Ambulance dispatched,Ambulance 3.0
+43,408.819440287402,Task complete,Ambulance 3.0
+44,14.039432390216476,New patient priority A2,Region 2
+44,379.681171742894,Ambulance dispatched,Ambulance 2.0
+44,412.8086050584459,Task complete,Ambulance 2.0
+45,78.89475103752306,New patient priority B,Region 6
+45,375.190143111327,Ambulance dispatched,Ambulance 6.0
+45,419.83786617190873,Task complete,Ambulance 6.0
+46,28.085937228565665,New patient priority A1,Region 1
+46,388.47250095952904,Ambulance dispatched,Ambulance 1.0
+46,429.4100555555581,Task complete,Ambulance 1.0
+47,63.9562556644334,New patient priority B,Region 6
+47,63.9562556644334,Ambulance dispatched,Ambulance 6.1
+47,459.7426935989622,Task complete,Ambulance 6.1
+48,19.01546145928624,New patient priority A1,Region 2
+48,412.8086050584459,Ambulance dispatched,Ambulance 2.0
+48,461.9475108106832,Task complete,Ambulance 2.0
+49,22.805050443807474,New patient priority A1,Region 2
+49,461.9475108106832,Ambulance dispatched,Ambulance 2.0
+49,481.7286713072872,Task complete,Ambulance 2.0
+50,85.29784465268993,New patient priority A1,Region 6
+50,459.7426935989622,Ambulance dispatched,Ambulance 6.1
+50,484.6126399302417,Task complete,Ambulance 6.1
+51,90.28731574203742,New patient priority B,Region 6
+51,484.6126399302417,Ambulance dispatched,Ambulance 6.1
+51,507.44693767770434,Task complete,Ambulance 6.1
+52,24.676796502763672,New patient priority A2,Region 2
+52,481.7286713072872,Ambulance dispatched,Ambulance 2.0
+52,509.8592281728215,Task complete,Ambulance 2.0
+53,81.43814841895802,New patient priority A1,Region 6
+53,419.83786617190873,Ambulance dispatched,Ambulance 6.0
+53,513.4222693002274,Task complete,Ambulance 6.0
+54,93.97302411474584,New patient priority A2,Region 6
+54,507.44693767770434,Ambulance dispatched,Ambulance 6.1
+54,526.3419598003612,Task complete,Ambulance 6.1
+55,25.89814221575446,New patient priority B,Region 2
+55,509.8592281728215,Ambulance dispatched,Ambulance 2.0
+55,539.7002466117196,Task complete,Ambulance 2.0
+56,97.00533824582526,New patient priority A1,Region 6
+56,526.3419598003612,Ambulance dispatched,Ambulance 6.1
+56,551.7987746431096,Task complete,Ambulance 6.1
+57,26.92088570164007,New patient priority B,Region 2
+57,539.7002466117196,Ambulance dispatched,Ambulance 2.0
+57,567.3679674964217,Task complete,Ambulance 2.0
+58,29.267487439391132,New patient priority B,Region 1
+58,429.4100555555581,Ambulance dispatched,Ambulance 1.0
+58,573.2592174256735,Task complete,Ambulance 1.0
+59,30.794323816629962,New patient priority A2,Region 1
+59,573.2592174256735,Ambulance dispatched,Ambulance 1.0
+59,602.1698535963778,Task complete,Ambulance 1.0
+60,32.973334371481585,New patient priority A2,Region 1
+60,602.1698535963778,Ambulance dispatched,Ambulance 1.0
+60,619.6345682802705,Task complete,Ambulance 1.0
+61,36.282102404932154,New patient priority B,Region 1
+61,619.6345682802705,Ambulance dispatched,Ambulance 1.0
+61,645.9991867044789,Task complete,Ambulance 1.0
+62,40.99945564533682,New patient priority A2,Region 1
+62,645.9991867044789,Ambulance dispatched,Ambulance 1.0
+62,673.2454668343486,Task complete,Ambulance 1.0
+63,43.492052708100104,New patient priority A1,Region 4
+63,408.4811968747396,Ambulance dispatched,Ambulance 4.0
+63,771.3984716168281,Task complete,Ambulance 4.0
+64,46.88235585275575,New patient priority A1,Region 4
+64,771.3984716168281,Ambulance dispatched,Ambulance 4.0
+64,796.0650021878791,Task complete,Ambulance 4.0
+65,48.58949920442103,New patient priority A1,Region 4
+65,796.0650021878791,Ambulance dispatched,Ambulance 4.0
+65,820.8254585636311,Task complete,Ambulance 4.0
+66,15.192743414250057,New patient priority B,Region 5
+66,15.192743414250057,Ambulance dispatched,Ambulance 5.0
+66,831.8516531435957,Task complete,Ambulance 5.0
+67,49.7593219175885,New patient priority A2,Region 4
+67,820.8254585636311,Ambulance dispatched,Ambulance 4.0
+67,850.40169570422,Task complete,Ambulance 4.0
+68,25.007147238144128,New patient priority B,Region 5
+68,831.8516531435957,Ambulance dispatched,Ambulance 5.0
+68,919.4576018379123,Task complete,Ambulance 5.0
+69,26.155280183121064,New patient priority A2,Region 5
+69,919.4576018379123,Ambulance dispatched,Ambulance 5.0
+69,996.7479157388025,Task complete,Ambulance 5.0
+70,27.162122971585262,New patient priority A2,Region 5
+70,996.7479157388025,Ambulance dispatched,Ambulance 5.0
+70,1027.5909454793384,Task complete,Ambulance 5.0
+71,28.19600390722168,New patient priority A2,Region 5
+71,1027.5909454793384,Ambulance dispatched,Ambulance 5.0
+71,1057.9025326194485,Task complete,Ambulance 5.0
+72,29.40263461961903,New patient priority A2,Region 5
+72,1057.9025326194485,Ambulance dispatched,Ambulance 5.0
+72,1092.506678946982,Task complete,Ambulance 5.0
+73,30.978899823451087,New patient priority A2,Region 5
+73,1092.506678946982,Ambulance dispatched,Ambulance 5.0
+73,1137.8515018754256,Task complete,Ambulance 5.0
+74,33.24814869584271,New patient priority A1,Region 5
+74,1137.8515018754256,Ambulance dispatched,Ambulance 5.0
+74,1173.3636202932478,Task complete,Ambulance 5.0
+75,50.770287279714196,New patient priority A2,Region 4
+75,850.40169570422,Ambulance dispatched,Ambulance 4.0
+75,1282.968354003253,Task complete,Ambulance 4.0
+76,51.79692858131875,New patient priority B,Region 4
+76,1282.968354003253,Ambulance dispatched,Ambulance 4.0
+76,1335.2431481558351,Task complete,Ambulance 4.0
+77,36.70001476112269,New patient priority A1,Region 5
+77,1173.3636202932478,Ambulance dispatched,Ambulance 5.0
+77,1357.7545285479068,Task complete,Ambulance 5.0
+78,52.983802911007096,New patient priority B,Region 4
+78,1335.2431481558351,Ambulance dispatched,Ambulance 4.0
+78,1370.0595570468045,Task complete,Ambulance 4.0
+79,41.52022414547253,New patient priority A2,Region 5
+79,1357.7545285479068,Ambulance dispatched,Ambulance 5.0
+79,1396.5975122316192,Task complete,Ambulance 5.0
+80,45.83817497260956,New patient priority A1,Region 5
+80,1396.5975122316192,Ambulance dispatched,Ambulance 5.0
+80,1415.2532328925538,Task complete,Ambulance 5.0
+81,48.011864244891505,New patient priority A2,Region 5
+81,1415.2532328925538,Ambulance dispatched,Ambulance 5.0
+81,1434.7952117208838,Task complete,Ambulance 5.0
+82,95.7984369189355,New patient priority A2,Region 6
+82,513.4222693002274,Ambulance dispatched,Ambulance 6.0
+82,1448.3833423122076,Task complete,Ambulance 6.0
+83,49.32622036929606,New patient priority B,Region 5
+83,1434.7952117208838,Ambulance dispatched,Ambulance 5.0
+83,1455.7175252884208,Task complete,Ambulance 5.0
+84,54.521184228361456,New patient priority B,Region 4
+84,1370.0595570468045,Ambulance dispatched,Ambulance 4.0
+84,1479.1357700200529,Task complete,Ambulance 4.0
+85,99.04185391307998,New patient priority A1,Region 6
+85,1448.3833423122076,Ambulance dispatched,Ambulance 6.0
+85,1487.2091001937904,Task complete,Ambulance 6.0
+86,50.37427164478379,New patient priority A1,Region 5
+86,1455.7175252884208,Ambulance dispatched,Ambulance 5.0
+86,1497.9751508115119,Task complete,Ambulance 5.0
+87,100.20087371181472,New patient priority A2,Region 6
+87,1487.2091001937904,Ambulance dispatched,Ambulance 6.0
+87,1505.1364267799365,Task complete,Ambulance 6.0
+88,51.37767621246851,New patient priority A1,Region 5
+88,1497.9751508115119,Ambulance dispatched,Ambulance 5.0
+88,1516.1399865978176,Task complete,Ambulance 5.0
+89,101.68272079296388,New patient priority A1,Region 6
+89,1505.1364267799365,Ambulance dispatched,Ambulance 6.0
+89,1529.2393013920494,Task complete,Ambulance 6.0
+90,52.48206734586615,New patient priority B,Region 5
+90,1516.1399865978176,Ambulance dispatched,Ambulance 5.0
+90,1534.9837123602265,Task complete,Ambulance 5.0
+91,103.77905090713864,New patient priority B,Region 6
+91,1529.2393013920494,Ambulance dispatched,Ambulance 6.0
+91,1559.4492105075076,Task complete,Ambulance 6.0
+92,53.85137228224396,New patient priority A2,Region 5
+92,1534.9837123602265,Ambulance dispatched,Ambulance 5.0
+92,1581.1974287189673,Task complete,Ambulance 5.0
+93,106.95332498320721,New patient priority A1,Region 6
+93,1559.4492105075076,Ambulance dispatched,Ambulance 6.0
+93,1582.0874242243883,Task complete,Ambulance 6.0
+94,55.73846779689064,New patient priority A2,Region 5
+94,1581.1974287189673,Ambulance dispatched,Ambulance 5.0
+94,1629.1385159122742,Task complete,Ambulance 5.0
+95,58.55962270947563,New patient priority B,Region 5
+95,1629.1385159122742,Ambulance dispatched,Ambulance 5.0
+95,1655.7407501360447,Task complete,Ambulance 5.0
+96,62.78394758072723,New patient priority A2,Region 5
+96,1655.7407501360447,Ambulance dispatched,Ambulance 5.0
+96,1773.1982027158663,Task complete,Ambulance 5.0
+97,111.55566770667335,New patient priority A1,Region 6
+97,1582.0874242243883,Ambulance dispatched,Ambulance 6.0
+97,1781.009310766983,Task complete,Ambulance 6.0
+98,116.22940030292983,New patient priority B,Region 6
+98,1781.009310766983,Ambulance dispatched,Ambulance 6.0
+98,1821.9979177121493,Task complete,Ambulance 6.0
+99,118.73805648800699,New patient priority A1,Region 6
+99,1821.9979177121493,Ambulance dispatched,Ambulance 6.0
+99,1854.1750392219064,Task complete,Ambulance 6.0
+100,67.74061889374944,New patient priority A2,Region 5
+100,1773.1982027158663,Ambulance dispatched,Ambulance 5.0
+100,1937.087678447369,Task complete,Ambulance 5.0
+101,120.15457369166786,New patient priority A1,Region 6
+101,1854.1750392219064,Ambulance dispatched,Ambulance 6.0
+101,1954.1654781250943,Task complete,Ambulance 6.0
+102,4.934116842895408,New patient priority A1,Region 1
+102,4.934116842895408,Ambulance dispatched,Ambulance 1.2
+102,1971.3442145203958,Task complete,Ambulance 1.2
+103,121.23323791988926,New patient priority B,Region 6
+103,1954.1654781250943,Ambulance dispatched,Ambulance 6.0
+103,1991.5047795719809,Task complete,Ambulance 6.0
+104,70.83551394486564,New patient priority B,Region 5
+104,1937.087678447369,Ambulance dispatched,Ambulance 5.0
+104,2003.3470063403147,Task complete,Ambulance 5.0
+105,72.43825372864973,New patient priority A2,Region 5
+105,2003.3470063403147,Ambulance dispatched,Ambulance 5.0
+105,2035.6205958481696,Task complete,Ambulance 5.0
+106,73.57517671520252,New patient priority A1,Region 5
+106,2035.6205958481696,Ambulance dispatched,Ambulance 5.0
+106,2070.2355120586208,Task complete,Ambulance 5.0
+107,74.58015860218813,New patient priority B,Region 5
+107,2070.2355120586208,Ambulance dispatched,Ambulance 5.0
+107,2119.4351334574426,Task complete,Ambulance 5.0
+108,75.61844499316128,New patient priority B,Region 5
+108,2119.4351334574426,Ambulance dispatched,Ambulance 5.0
+108,2144.4753442419196,Task complete,Ambulance 5.0
+109,76.8365751582119,New patient priority A2,Region 5
+109,2144.4753442419196,Ambulance dispatched,Ambulance 5.0
+109,2188.390222061712,Task complete,Ambulance 5.0
+110,122.2332602512119,New patient priority A2,Region 6
+110,1991.5047795719809,Ambulance dispatched,Ambulance 6.0
+110,2305.8138606868556,Task complete,Ambulance 6.0
+111,123.30571300090261,New patient priority A2,Region 6
+111,2305.8138606868556,Ambulance dispatched,Ambulance 6.0
+111,2326.38706871473,Task complete,Ambulance 6.0
+112,124.60535032078458,New patient priority B,Region 6
+112,2326.38706871473,Ambulance dispatched,Ambulance 6.0
+112,2356.2563952478886,Task complete,Ambulance 6.0
+113,126.36088717052503,New patient priority B,Region 6
+113,2356.2563952478886,Ambulance dispatched,Ambulance 6.0
+113,2432.5774610918015,Task complete,Ambulance 6.0
+114,128.95195250700442,New patient priority A1,Region 6
+114,2432.5774610918015,Ambulance dispatched,Ambulance 6.0
+114,2451.9989556644605,Task complete,Ambulance 6.0
+115,132.87796147906863,New patient priority A1,Region 6
+115,2451.9989556644605,Ambulance dispatched,Ambulance 6.0
+115,2476.894341239661,Task complete,Ambulance 6.0
+116,137.87565713565328,New patient priority B,Region 6
+116,2476.894341239661,Ambulance dispatched,Ambulance 6.0
+116,2508.0275437739065,Task complete,Ambulance 6.0
+117,141.4535469802564,New patient priority B,Region 6
+117,2508.0275437739065,Ambulance dispatched,Ambulance 6.0
+117,2527.4657264007174,Task complete,Ambulance 6.0
+118,143.23373780097563,New patient priority B,Region 6
+118,2527.4657264007174,Ambulance dispatched,Ambulance 6.0
+118,2555.487981641299,Task complete,Ambulance 6.0
+119,144.4264947543148,New patient priority A2,Region 6
+119,2555.487981641299,Ambulance dispatched,Ambulance 6.0
+119,2577.84225445236,Task complete,Ambulance 6.0
+120,78.43531428903499,New patient priority A2,Region 5
+120,2188.390222061712,Ambulance dispatched,Ambulance 5.0
+120,2600.6802790790716,Task complete,Ambulance 5.0
+121,45.51199672409384,New patient priority B,Region 1
+121,673.2454668343486,Ambulance dispatched,Ambulance 1.0
+121,2624.503261915525,Task complete,Ambulance 1.0
+122,80.74538345841219,New patient priority B,Region 5
+122,2600.6802790790716,Ambulance dispatched,Ambulance 5.0
+122,2631.189685213838,Task complete,Ambulance 5.0
+123,47.84616377211562,New patient priority A1,Region 1
+123,2624.503261915525,Ambulance dispatched,Ambulance 1.0
+123,2665.718393505974,Task complete,Ambulance 1.0
+124,49.20944345089329,New patient priority B,Region 1
+124,2665.718393505974,Ambulance dispatched,Ambulance 1.0
+124,2690.992212642949,Task complete,Ambulance 1.0
+125,84.2606325203973,New patient priority B,Region 5
+125,2631.189685213838,Ambulance dispatched,Ambulance 5.0
+125,2876.1401859486423,Task complete,Ambulance 5.0
+126,89.11960069753948,New patient priority B,Region 5
+126,2876.1401859486423,Ambulance dispatched,Ambulance 5.0
+126,2901.2665998508924,Task complete,Ambulance 5.0
+127,93.34535971841602,New patient priority A2,Region 5
+127,2901.2665998508924,Ambulance dispatched,Ambulance 5.0
+127,2918.1810789255587,Task complete,Ambulance 5.0
+128,50.271927408136754,New patient priority A1,Region 1
+128,2690.992212642949,Ambulance dispatched,Ambulance 1.0
+128,2939.179002540761,Task complete,Ambulance 1.0
+129,51.272901349597404,New patient priority A2,Region 1
+129,2939.179002540761,Ambulance dispatched,Ambulance 1.0
+129,3033.2799647624943,Task complete,Ambulance 1.0
+130,52.36030348229524,New patient priority B,Region 1
+130,3033.2799647624943,Ambulance dispatched,Ambulance 1.0
+130,3066.4642402294267,Task complete,Ambulance 1.0
+131,53.693065160824546,New patient priority A2,Region 1
+131,3066.4642402294267,Ambulance dispatched,Ambulance 1.0
+131,3131.6632192548273,Task complete,Ambulance 1.0
+132,55.511381220397524,New patient priority A1,Region 1
+132,3131.6632192548273,Ambulance dispatched,Ambulance 1.0
+132,3203.84936495165,Task complete,Ambulance 1.0
+133,58.212942521371964,New patient priority B,Region 1
+133,3203.84936495165,Ambulance dispatched,Ambulance 1.0
+133,3242.9662927973295,Task complete,Ambulance 1.0
+134,4.770266736700934,New patient priority B,Region 2
+134,4.770266736700934,Ambulance dispatched,Ambulance 2.1
+134,3266.8828102998373,Task complete,Ambulance 2.1
+135,62.28686803365735,New patient priority B,Region 1
+135,3242.9662927973295,Ambulance dispatched,Ambulance 1.0
+135,3267.9013412285003,Task complete,Ambulance 1.0
+136,95.45528174796459,New patient priority B,Region 5
+136,2918.1810789255587,Ambulance dispatched,Ambulance 5.0
+136,3278.889375519301,Task complete,Ambulance 5.0
+137,67.28099130099554,New patient priority B,Region 1
+137,3267.9013412285003,Ambulance dispatched,Ambulance 1.0
+137,3295.5522386081175,Task complete,Ambulance 1.0
+138,96.75013270222435,New patient priority A2,Region 5
+138,3278.889375519301,Ambulance dispatched,Ambulance 5.0
+138,3301.249673705311,Task complete,Ambulance 5.0
+139,70.61814436003287,New patient priority A2,Region 1
+139,3295.5522386081175,Ambulance dispatched,Ambulance 1.0
+139,3318.4495257013755,Task complete,Ambulance 1.0
+140,97.7925967606555,New patient priority A1,Region 5
+140,3301.249673705311,Ambulance dispatched,Ambulance 5.0
+140,3326.4768011275514,Task complete,Ambulance 5.0
+141,72.30566861168924,New patient priority A2,Region 1
+141,3318.4495257013755,Ambulance dispatched,Ambulance 1.0
+141,3356.3754520671528,Task complete,Ambulance 1.0
+142,98.79750704021872,New patient priority A1,Region 5
+142,3326.4768011275514,Ambulance dispatched,Ambulance 5.0
+142,3362.010202104123,Task complete,Ambulance 5.0
+143,99.90977291390382,New patient priority B,Region 5
+143,3362.010202104123,Ambulance dispatched,Ambulance 5.0
+143,3390.251228922801,Task complete,Ambulance 5.0
+144,101.29570696479402,New patient priority B,Region 5
+144,3390.251228922801,Ambulance dispatched,Ambulance 5.0
+144,3423.368496018344,Task complete,Ambulance 5.0
+145,73.4693165218545,New patient priority A1,Region 1
+145,3356.3754520671528,Ambulance dispatched,Ambulance 1.0
+145,3463.3320254533583,Task complete,Ambulance 1.0
+146,103.21395243844336,New patient priority B,Region 5
+146,3423.368496018344,Ambulance dispatched,Ambulance 5.0
+146,3507.404098853541,Task complete,Ambulance 5.0
+147,74.47904585878076,New patient priority B,Region 1
+147,3463.3320254533583,Ambulance dispatched,Ambulance 1.0
+147,3510.1691201986614,Task complete,Ambulance 1.0
+148,106.08873571146461,New patient priority A1,Region 5
+148,3507.404098853541,Ambulance dispatched,Ambulance 5.0
+148,3531.12759057299,Task complete,Ambulance 5.0
+149,75.50759333067721,New patient priority A1,Region 1
+149,3510.1691201986614,Ambulance dispatched,Ambulance 1.0
+149,3531.863344445518,Task complete,Ambulance 1.0
+150,27.93534956942287,New patient priority B,Region 2
+150,567.3679674964217,Ambulance dispatched,Ambulance 2.0
+150,3556.32356554578,Task complete,Ambulance 2.0
+151,110.37703434094064,New patient priority A1,Region 5
+151,3531.12759057299,Ambulance dispatched,Ambulance 5.0
+151,3557.2389645835274,Task complete,Ambulance 5.0
+152,29.08510085461601,New patient priority A1,Region 2
+152,3556.32356554578,Ambulance dispatched,Ambulance 2.0
+152,3590.715750872776,Task complete,Ambulance 2.0
+153,115.30636779064912,New patient priority A1,Region 5
+153,3557.2389645835274,Ambulance dispatched,Ambulance 5.0
+153,3597.0256192257334,Task complete,Ambulance 5.0
+154,30.548243590413136,New patient priority A2,Region 2
+154,3590.715750872776,Ambulance dispatched,Ambulance 2.0
+154,3617.0724045047637,Task complete,Ambulance 2.0
+155,32.61004371925642,New patient priority A2,Region 2
+155,3617.0724045047637,Ambulance dispatched,Ambulance 2.0
+155,3637.6394610287894,Task complete,Ambulance 2.0
+156,35.727252776117325,New patient priority B,Region 2
+156,3637.6394610287894,Ambulance dispatched,Ambulance 2.0
+156,3666.9803642011934,Task complete,Ambulance 2.0
+157,118.29962619569864,New patient priority B,Region 5
+157,3597.0256192257334,Ambulance dispatched,Ambulance 5.0
+157,3788.9878455239395,Task complete,Ambulance 5.0
+158,76.69979077922552,New patient priority A2,Region 1
+158,3531.863344445518,Ambulance dispatched,Ambulance 1.0
+158,3806.8236553846714,Task complete,Ambulance 1.0
+159,119.86860145504126,New patient priority A2,Region 5
+159,3788.9878455239395,Ambulance dispatched,Ambulance 5.0
+159,3817.980410335044,Task complete,Ambulance 5.0
+160,78.24768565777227,New patient priority A1,Region 1
+160,3806.8236553846714,Ambulance dispatched,Ambulance 1.0
+160,3831.0714447372766,Task complete,Ambulance 1.0
+161,120.99488119659333,New patient priority A1,Region 5
+161,3817.980410335044,Ambulance dispatched,Ambulance 5.0
+161,3835.4842024448953,Task complete,Ambulance 5.0
+162,80.46521786475647,New patient priority A2,Region 1
+162,3831.0714447372766,Ambulance dispatched,Ambulance 1.0
+162,3851.6600987507545,Task complete,Ambulance 1.0
+163,121.99830252653057,New patient priority B,Region 5
+163,3835.4842024448953,Ambulance dispatched,Ambulance 5.0
+163,3867.84042695345,Task complete,Ambulance 5.0
+164,83.83556151511596,New patient priority A2,Region 1
+164,3851.6600987507545,Ambulance dispatched,Ambulance 1.0
+164,3885.5297074165974,Task complete,Ambulance 1.0
+165,123.04127264521539,New patient priority A2,Region 5
+165,3867.84042695345,Ambulance dispatched,Ambulance 5.0
+165,3897.7322990580897,Task complete,Ambulance 5.0
+166,124.27129070852517,New patient priority A1,Region 5
+166,3897.7322990580897,Ambulance dispatched,Ambulance 5.0
+166,3950.9002864103745,Task complete,Ambulance 5.0
+167,88.59972039643131,New patient priority A2,Region 1
+167,3885.5297074165974,Ambulance dispatched,Ambulance 1.0
+167,4077.763668263949,Task complete,Ambulance 1.0
+168,93.03108723623622,New patient priority A1,Region 1
+168,4077.763668263949,Ambulance dispatched,Ambulance 1.0
+168,4261.722107049629,Task complete,Ambulance 1.0
+169,40.27572028923642,New patient priority B,Region 2
+169,3666.9803642011934,Ambulance dispatched,Ambulance 2.0
+169,4324.486399929896,Task complete,Ambulance 2.0
+170,45.01013932955021,New patient priority A2,Region 2
+170,4324.486399929896,Ambulance dispatched,Ambulance 2.0
+170,4366.792562364115,Task complete,Ambulance 2.0
+171,47.60051266755155,New patient priority B,Region 2
+171,4366.792562364115,Ambulance dispatched,Ambulance 2.0
+171,4405.477144719042,Task complete,Ambulance 2.0
+172,49.04210961897871,New patient priority B,Region 2
+172,4405.477144719042,Ambulance dispatched,Ambulance 2.0
+172,4438.68127418316,Task complete,Ambulance 2.0
+173,50.12851114843212,New patient priority B,Region 2
+173,4438.68127418316,Ambulance dispatched,Ambulance 2.0
+173,4537.378864744391,Task complete,Ambulance 2.0
+174,51.12855783872213,New patient priority A1,Region 2
+174,4537.378864744391,Ambulance dispatched,Ambulance 2.0
+174,4719.505961660151,Task complete,Ambulance 2.0
+175,52.19497690672264,New patient priority A2,Region 2
+175,4719.505961660151,Ambulance dispatched,Ambulance 2.0
+175,4743.040924065943,Task complete,Ambulance 2.0
+176,53.48091219894981,New patient priority A2,Region 2
+176,4743.040924065943,Ambulance dispatched,Ambulance 2.0
+176,4779.351846626939,Task complete,Ambulance 2.0
+177,55.21034240000699,New patient priority A1,Region 2
+177,4779.351846626939,Ambulance dispatched,Ambulance 2.0
+177,4889.507497550095,Task complete,Ambulance 2.0
+178,95.29323303298634,New patient priority B,Region 1
+178,4261.722107049629,Ambulance dispatched,Ambulance 1.0
+178,4977.250701740769,Task complete,Ambulance 1.0
+179,125.89315473964879,New patient priority B,Region 5
+179,3950.9002864103745,Ambulance dispatched,Ambulance 5.0
+179,4981.514692222087,Task complete,Ambulance 5.0
+180,96.63457335812589,New patient priority B,Region 1
+180,4977.250701740769,Ambulance dispatched,Ambulance 1.0
+180,4998.503986219304,Task complete,Ambulance 1.0
+181,97.69052103976216,New patient priority A1,Region 1
+181,4998.503986219304,Ambulance dispatched,Ambulance 1.0
+181,5022.339173966562,Task complete,Ambulance 1.0
+182,98.69237072699407,New patient priority A2,Region 1
+182,5022.339173966562,Ambulance dispatched,Ambulance 1.0
+182,5063.006304184226,Task complete,Ambulance 1.0
+183,99.78694862112219,New patient priority A2,Region 1
+183,5063.006304184226,Ambulance dispatched,Ambulance 1.0
+183,5131.048425256346,Task complete,Ambulance 1.0
+184,101.13526846243933,New patient priority A1,Region 1
+184,5131.048425256346,Ambulance dispatched,Ambulance 1.0
+184,5156.066879057905,Task complete,Ambulance 1.0
+185,102.98292442446709,New patient priority B,Region 1
+185,5156.066879057905,Ambulance dispatched,Ambulance 1.0
+185,5178.993823849767,Task complete,Ambulance 1.0
+186,105.73569558094479,New patient priority A2,Region 1
+186,5178.993823849767,Ambulance dispatched,Ambulance 1.0
+186,5206.412851172237,Task complete,Ambulance 1.0
+187,109.87529779060299,New patient priority B,Region 1
+187,5206.412851172237,Ambulance dispatched,Ambulance 1.0
+187,5233.548167212763,Task complete,Ambulance 1.0
+188,114.85749372241328,New patient priority A2,Region 1
+188,5233.548167212763,Ambulance dispatched,Ambulance 1.0
+188,5256.771181354116,Task complete,Ambulance 1.0
+189,118.0883713207066,New patient priority B,Region 1
+189,5256.771181354116,Ambulance dispatched,Ambulance 1.0
+189,5288.624263332358,Task complete,Ambulance 1.0
+190,6.645709630707163,New patient priority A1,Region 0
+190,58.963316460617094,Ambulance dispatched,Ambulance 0.0
+190,5301.720888361671,Task complete,Ambulance 0.0
+191,8.608137982014242,New patient priority B,Region 0
+191,5301.720888361671,Ambulance dispatched,Ambulance 0.0
+191,5328.508346967275,Task complete,Ambulance 0.0
+192,11.558383510428472,New patient priority B,Region 0
+192,5328.508346967275,Ambulance dispatched,Ambulance 0.0
+192,5361.03926477642,Task complete,Ambulance 0.0
+193,15.932884343130144,New patient priority A1,Region 0
+193,5361.03926477642,Ambulance dispatched,Ambulance 0.0
+193,5389.029864640322,Task complete,Ambulance 0.0
+194,20.81349281763981,New patient priority A2,Region 0
+194,5389.029864640322,Ambulance dispatched,Ambulance 0.0
+194,5419.442843575067,Task complete,Ambulance 0.0
+195,128.24508875335835,New patient priority B,Region 5
+195,4981.514692222087,Ambulance dispatched,Ambulance 5.0
+195,5468.134800875772,Task complete,Ambulance 5.0
+196,131.82442577350872,New patient priority A1,Region 5
+196,5468.134800875772,Ambulance dispatched,Ambulance 5.0
+196,5517.540178989834,Task complete,Ambulance 5.0
+197,23.671415652670714,New patient priority A1,Region 0
+197,5419.442843575067,Ambulance dispatched,Ambulance 0.0
+197,5527.386067861873,Task complete,Ambulance 0.0
+198,136.71814585402691,New patient priority A2,Region 5
+198,5517.540178989834,Ambulance dispatched,Ambulance 5.0
+198,5542.105558052541,Task complete,Ambulance 5.0
+199,119.737846880311,New patient priority A2,Region 1
+199,5288.624263332358,Ambulance dispatched,Ambulance 1.0
+199,5550.6391790509115,Task complete,Ambulance 1.0
+200,25.196652036679936,New patient priority A2,Region 0
+200,5527.386067861873,Ambulance dispatched,Ambulance 0.0
+200,5599.679664489682,Task complete,Ambulance 0.0
+201,140.8477014484503,New patient priority A1,Region 5
+201,5542.105558052541,Ambulance dispatched,Ambulance 5.0
+201,5659.825336622302,Task complete,Ambulance 5.0
+202,26.309169294774115,New patient priority A2,Region 0
+202,5599.679664489682,Ambulance dispatched,Ambulance 0.0
+202,5720.666546881269,Task complete,Ambulance 0.0
+203,120.88950674963056,New patient priority B,Region 1
+203,5550.6391790509115,Ambulance dispatched,Ambulance 1.0
+203,5747.048102721172,Task complete,Ambulance 1.0
+204,27.31092669244617,New patient priority B,Region 0
+204,5720.666546881269,Ambulance dispatched,Ambulance 0.0
+204,5756.921195281873,Task complete,Ambulance 0.0
+205,121.896976029847,New patient priority A1,Region 1
+205,5747.048102721172,Ambulance dispatched,Ambulance 1.0
+205,5791.098878279396,Task complete,Ambulance 1.0
+206,28.36080442919285,New patient priority B,Region 0
+206,5756.921195281873,Ambulance dispatched,Ambulance 0.0
+206,5805.334607816101,Task complete,Ambulance 0.0
+207,29.60783844626555,New patient priority B,Region 0
+207,5805.334607816101,Ambulance dispatched,Ambulance 0.0
+207,5837.306345690472,Task complete,Ambulance 0.0
+208,31.26263123936067,New patient priority A1,Region 0
+208,5837.306345690472,Ambulance dispatched,Ambulance 0.0
+208,5866.885194379304,Task complete,Ambulance 0.0
+209,33.67393349776193,New patient priority A1,Region 0
+209,5866.885194379304,Ambulance dispatched,Ambulance 0.0
+209,5921.485660545095,Task complete,Ambulance 0.0
+210,37.34249816404147,New patient priority B,Region 0
+210,5921.485660545095,Ambulance dispatched,Ambulance 0.0
+210,5952.812746082388,Task complete,Ambulance 0.0
+211,42.27689541628068,New patient priority A1,Region 0
+211,5952.812746082388,Ambulance dispatched,Ambulance 0.0
+211,5985.214913338985,Task complete,Ambulance 0.0
+212,46.26847229681965,New patient priority A2,Region 0
+212,5985.214913338985,Ambulance dispatched,Ambulance 0.0
+212,6004.067665401117,Task complete,Ambulance 0.0
+213,48.24010394660883,New patient priority B,Region 0
+213,6004.067665401117,Ambulance dispatched,Ambulance 0.0
+213,6042.8641606196115,Task complete,Ambulance 0.0
+214,142.89722516519444,New patient priority B,Region 5
+214,5659.825336622302,Ambulance dispatched,Ambulance 5.0
+214,6473.0552042614145,Task complete,Ambulance 5.0
+215,144.17354389253447,New patient priority B,Region 5
+215,6473.0552042614145,Ambulance dispatched,Ambulance 5.0
+215,6505.1716464032515,Task complete,Ambulance 5.0
+216,145.21081354256805,New patient priority A2,Region 5
+216,6505.1716464032515,Ambulance dispatched,Ambulance 5.0
+216,6527.126058552341,Task complete,Ambulance 5.0
+217,146.21749938116702,New patient priority B,Region 5
+217,6527.126058552341,Ambulance dispatched,Ambulance 5.0
+217,6546.38927003912,Task complete,Ambulance 5.0
+218,147.3379470400755,New patient priority A2,Region 5
+218,6546.38927003912,Ambulance dispatched,Ambulance 5.0
+218,6567.875426029477,Task complete,Ambulance 5.0
+219,148.7409861693591,New patient priority B,Region 5
+219,6567.875426029477,Ambulance dispatched,Ambulance 5.0
+219,6612.311070149989,Task complete,Ambulance 5.0
+220,150.69118351602515,New patient priority A2,Region 5
+220,6612.311070149989,Ambulance dispatched,Ambulance 5.0
+220,6641.345776869391,Task complete,Ambulance 5.0
+221,153.6206116321948,New patient priority A2,Region 5
+221,6641.345776869391,Ambulance dispatched,Ambulance 5.0
+221,6680.65103814056,Task complete,Ambulance 5.0
+222,157.9717872423495,New patient priority B,Region 5
+222,6680.65103814056,Ambulance dispatched,Ambulance 5.0
+222,6700.1264524042035,Task complete,Ambulance 5.0
+223,162.86699254621973,New patient priority B,Region 5
+223,6700.1264524042035,Ambulance dispatched,Ambulance 5.0
+223,6722.75826243303,Task complete,Ambulance 5.0
+224,165.76134627156918,New patient priority B,Region 5
+224,6722.75826243303,Ambulance dispatched,Ambulance 5.0
+224,6752.122328805133,Task complete,Ambulance 5.0
+225,167.29823770409325,New patient priority B,Region 5
+225,6752.122328805133,Ambulance dispatched,Ambulance 5.0
+225,6774.49788273182,Task complete,Ambulance 5.0
+226,168.41441802716375,New patient priority A2,Region 5
+226,6774.49788273182,Ambulance dispatched,Ambulance 5.0
+226,6807.113256014284,Task complete,Ambulance 5.0
+227,169.4165750822222,New patient priority B,Region 5
+227,6807.113256014284,Ambulance dispatched,Ambulance 5.0
+227,6840.943139173815,Task complete,Ambulance 5.0
+228,57.755104463129605,New patient priority A2,Region 2
+228,4889.507497550095,Ambulance dispatched,Ambulance 2.0
+228,6843.175007368933,Task complete,Ambulance 2.0
+229,170.46451088237401,New patient priority A1,Region 5
+229,6840.943139173815,Ambulance dispatched,Ambulance 5.0
+229,6868.379194467602,Task complete,Ambulance 5.0
+230,61.61671939153559,New patient priority A2,Region 2
+230,6843.175007368933,Ambulance dispatched,Ambulance 2.0
+230,6875.293146951962,Task complete,Ambulance 2.0
+231,171.70681644366996,New patient priority A2,Region 5
+231,6868.379194467602,Ambulance dispatched,Ambulance 5.0
+231,6901.94456821149,Task complete,Ambulance 5.0
+232,173.35247787886652,New patient priority A1,Region 5
+232,6901.94456821149,Ambulance dispatched,Ambulance 5.0
+232,6933.056001858355,Task complete,Ambulance 5.0
+233,66.60651015158085,New patient priority A2,Region 2
+233,6875.293146951962,Ambulance dispatched,Ambulance 2.0
+233,6939.527722520176,Task complete,Ambulance 2.0
+234,70.28910533338937,New patient priority B,Region 2
+234,6939.527722520176,Ambulance dispatched,Ambulance 2.0
+234,6980.565049894462,Task complete,Ambulance 2.0
+235,175.74734615291317,New patient priority B,Region 5
+235,6933.056001858355,Ambulance dispatched,Ambulance 5.0
+235,6989.058272427071,Task complete,Ambulance 5.0
+236,72.11317379928774,New patient priority A2,Region 2
+236,6980.565049894462,Ambulance dispatched,Ambulance 2.0
+236,7007.7190299752165,Task complete,Ambulance 2.0
+237,179.39141004808621,New patient priority A2,Region 5
+237,6989.058272427071,Ambulance dispatched,Ambulance 5.0
+237,7017.787189826421,Task complete,Ambulance 5.0
+238,73.31965529825045,New patient priority A1,Region 2
+238,7007.7190299752165,Ambulance dispatched,Ambulance 2.0
+238,7044.72124191216,Task complete,Ambulance 2.0
+239,74.3387727654651,New patient priority A2,Region 2
+239,7044.72124191216,Ambulance dispatched,Ambulance 2.0
+239,7118.7200877874175,Task complete,Ambulance 2.0
+240,75.35615911070164,New patient priority B,Region 2
+240,7118.7200877874175,Ambulance dispatched,Ambulance 2.0
+240,7149.327185161749,Task complete,Ambulance 2.0
+241,76.5154600880678,New patient priority B,Region 2
+241,7149.327185161749,Ambulance dispatched,Ambulance 2.0
+241,7175.946604790492,Task complete,Ambulance 2.0
+242,77.99787265700135,New patient priority A1,Region 2
+242,7175.946604790492,Ambulance dispatched,Ambulance 2.0
+242,7218.698420382763,Task complete,Ambulance 2.0
+243,80.09524527786519,New patient priority B,Region 2
+243,7218.698420382763,Ambulance dispatched,Ambulance 2.0
+243,7236.970647078746,Task complete,Ambulance 2.0
+244,184.31555095724153,New patient priority A1,Region 5
+244,7017.787189826421,Ambulance dispatched,Ambulance 5.0
+244,7380.527322473697,Task complete,Ambulance 5.0
+245,188.34541912223673,New patient priority A1,Region 5
+245,7380.527322473697,Ambulance dispatched,Ambulance 5.0
+245,7433.470757468649,Task complete,Ambulance 5.0
+246,83.27123423179313,New patient priority A1,Region 2
+246,7236.970647078746,Ambulance dispatched,Ambulance 2.0
+246,7500.724839877848,Task complete,Ambulance 2.0
+247,87.87515020708439,New patient priority A1,Region 2
+247,7500.724839877848,Ambulance dispatched,Ambulance 2.0
+247,7522.517880553553,Task complete,Ambulance 2.0
+248,92.54698303330322,New patient priority A1,Region 2
+248,7522.517880553553,Ambulance dispatched,Ambulance 2.0
+248,7559.4219392015875,Task complete,Ambulance 2.0
+249,95.05325688319544,New patient priority A1,Region 2
+249,7559.4219392015875,Ambulance dispatched,Ambulance 2.0
+249,7582.580510631068,Task complete,Ambulance 2.0
+250,96.46904490263582,New patient priority A2,Region 2
+250,7582.580510631068,Ambulance dispatched,Ambulance 2.0
+250,7635.205252792115,Task complete,Ambulance 2.0
+251,49.49242120268166,New patient priority B,Region 0
+251,6042.8641606196115,Ambulance dispatched,Ambulance 0.0
+251,7823.399266465388,Task complete,Ambulance 0.0
+252,50.52316383341828,New patient priority B,Region 0
+252,7823.399266465388,Ambulance dispatched,Ambulance 0.0
+252,7859.150807638305,Task complete,Ambulance 0.0
+253,97.54748509309107,New patient priority B,Region 2
+253,7635.205252792115,Ambulance dispatched,Ambulance 2.0
+253,7916.230635793925,Task complete,Ambulance 2.0
+254,98.54751079633799,New patient priority B,Region 2
+254,7916.230635793925,Ambulance dispatched,Ambulance 2.0
+254,7937.002450683556,Task complete,Ambulance 2.0
+255,99.62014776781841,New patient priority B,Region 2
+255,7937.002450683556,Ambulance dispatched,Ambulance 2.0
+255,7964.584163606561,Task complete,Ambulance 2.0
+256,100.92020008943965,New patient priority A1,Region 2
+256,7964.584163606561,Ambulance dispatched,Ambulance 2.0
+256,7999.6255508809345,Task complete,Ambulance 2.0
+257,102.67652631609324,New patient priority B,Region 2
+257,7999.6255508809345,Ambulance dispatched,Ambulance 2.0
+257,8020.620192588944,Task complete,Ambulance 2.0
+258,105.26898854475306,New patient priority B,Region 2
+258,8020.620192588944,Ambulance dispatched,Ambulance 2.0
+258,8048.325208572552,Task complete,Ambulance 2.0
+259,190.33776253326374,New patient priority A2,Region 5
+259,7433.470757468649,Ambulance dispatched,Ambulance 5.0
+259,8222.318513418977,Task complete,Ambulance 5.0
+260,191.5964740390244,New patient priority B,Region 5
+260,8222.318513418977,Ambulance dispatched,Ambulance 5.0
+260,8255.375308023624,Task complete,Ambulance 5.0
+261,192.62893084088046,New patient priority A1,Region 5
+261,8255.375308023624,Ambulance dispatched,Ambulance 5.0
+261,8279.302933032346,Task complete,Ambulance 5.0
+262,51.532731177133066,New patient priority B,Region 0
+262,7859.150807638305,Ambulance dispatched,Ambulance 0.0
+262,8279.387109769477,Task complete,Ambulance 0.0
+263,193.63766026899796,New patient priority B,Region 5
+263,8279.302933032346,Ambulance dispatched,Ambulance 5.0
+263,8298.89415224806,Task complete,Ambulance 5.0
+264,52.664946573652955,New patient priority B,Region 0
+264,8279.387109769477,Ambulance dispatched,Ambulance 0.0
+264,8305.763064464732,Task complete,Ambulance 0.0
+265,194.76659981078575,New patient priority A2,Region 5
+265,8298.89415224806,Ambulance dispatched,Ambulance 5.0
+265,8322.820722414943,Task complete,Ambulance 5.0
+266,54.09231992072432,New patient priority A1,Region 0
+266,8305.763064464732,Ambulance dispatched,Ambulance 0.0
+266,8359.04114260386,Task complete,Ambulance 0.0
+267,196.18722833194113,New patient priority A1,Region 5
+267,8322.820722414943,Ambulance dispatched,Ambulance 5.0
+267,8360.778015561484,Task complete,Ambulance 5.0
+268,56.0878240185282,New patient priority A1,Region 0
+268,8359.04114260386,Ambulance dispatched,Ambulance 0.0
+268,8380.689652274032,Task complete,Ambulance 0.0
+269,198.17019161774746,New patient priority B,Region 5
+269,8360.778015561484,Ambulance dispatched,Ambulance 5.0
+269,8400.558391883913,Task complete,Ambulance 5.0
+270,109.1969185998746,New patient priority B,Region 2
+270,8048.325208572552,Ambulance dispatched,Ambulance 2.0
+270,8413.315795593526,Task complete,Ambulance 2.0
+271,114.19476467152705,New patient priority A1,Region 2
+271,8413.315795593526,Ambulance dispatched,Ambulance 2.0
+271,8471.342016324255,Task complete,Ambulance 2.0
+272,117.76952612418275,New patient priority A1,Region 2
+272,8471.342016324255,Ambulance dispatched,Ambulance 2.0
+272,8491.252401561613,Task complete,Ambulance 2.0
+273,201.15526009918102,New patient priority A2,Region 5
+273,8400.558391883913,Ambulance dispatched,Ambulance 5.0
+273,8523.330911283725,Task complete,Ambulance 5.0
+274,119.54844358679969,New patient priority A1,Region 2
+274,8491.252401561613,Ambulance dispatched,Ambulance 2.0
+274,8537.993678827628,Task complete,Ambulance 2.0
+275,205.567987979393,New patient priority A2,Region 5
+275,8523.330911283725,Ambulance dispatched,Ambulance 5.0
+275,8542.685490746584,Task complete,Ambulance 5.0
+276,120.74080162878509,New patient priority A2,Region 2
+276,8537.993678827628,Ambulance dispatched,Ambulance 2.0
+276,8561.049965507938,Task complete,Ambulance 2.0
+277,210.42228687244307,New patient priority A1,Region 5
+277,8542.685490746584,Ambulance dispatched,Ambulance 5.0
+277,8566.140013598331,Task complete,Ambulance 5.0
+278,121.75663080326314,New patient priority A1,Region 2
+278,8561.049965507938,Ambulance dispatched,Ambulance 2.0
+278,8583.139935275822,Task complete,Ambulance 2.0
+279,122.77720487141512,New patient priority A2,Region 2
+279,8583.139935275822,Ambulance dispatched,Ambulance 2.0
+279,8616.58789841443,Task complete,Ambulance 2.0
+280,123.94638853782332,New patient priority A1,Region 2
+280,8616.58789841443,Ambulance dispatched,Ambulance 2.0
+280,8652.462745233353,Task complete,Ambulance 2.0
+281,125.44860899337075,New patient priority B,Region 2
+281,8652.462745233353,Ambulance dispatched,Ambulance 2.0
+281,8679.840682016114,Task complete,Ambulance 2.0
+282,127.5824458292952,New patient priority A2,Region 2
+282,8679.840682016114,Ambulance dispatched,Ambulance 2.0
+282,8705.37910557018,Task complete,Ambulance 2.0
+283,213.22080777624325,New patient priority B,Region 5
+283,8566.140013598331,Ambulance dispatched,Ambulance 5.0
+283,8782.598060870861,Task complete,Ambulance 5.0
+284,130.81811498860966,New patient priority B,Region 2
+284,8705.37910557018,Ambulance dispatched,Ambulance 2.0
+284,8805.368440979408,Task complete,Ambulance 2.0
+285,214.7272022755958,New patient priority A2,Region 5
+285,8782.598060870861,Ambulance dispatched,Ambulance 5.0
+285,8806.783499384106,Task complete,Ambulance 5.0
+286,135.4750849270124,New patient priority A2,Region 2
+286,8805.368440979408,Ambulance dispatched,Ambulance 2.0
+286,8828.47964680547,Task complete,Ambulance 2.0
+287,140.07820059796472,New patient priority A1,Region 2
+287,8828.47964680547,Ambulance dispatched,Ambulance 2.0
+287,8902.357480055132,Task complete,Ambulance 2.0
+288,142.50415342931402,New patient priority A1,Region 2
+288,8902.357480055132,Ambulance dispatched,Ambulance 2.0
+288,8925.627012691511,Task complete,Ambulance 2.0
+289,143.89540407008536,New patient priority A1,Region 2
+289,8925.627012691511,Ambulance dispatched,Ambulance 2.0
+289,8948.814150796714,Task complete,Ambulance 2.0
+290,144.96634098850274,New patient priority B,Region 2
+290,8948.814150796714,Ambulance dispatched,Ambulance 2.0
+290,9332.730095817835,Task complete,Ambulance 2.0
+291,145.96662799314322,New patient priority A2,Region 2
+291,9332.730095817835,Ambulance dispatched,Ambulance 2.0
+291,9404.06029850086,Task complete,Ambulance 2.0
+292,122.92957126520707,New patient priority A1,Region 1
+292,5791.098878279396,Ambulance dispatched,Ambulance 1.0
+292,9712.349972667786,Task complete,Ambulance 1.0
+293,124.1327785873449,New patient priority A2,Region 1
+293,9712.349972667786,Ambulance dispatched,Ambulance 1.0
+293,9737.297307731424,Task complete,Ambulance 1.0
+294,125.70233183157849,New patient priority A1,Region 1
+294,9737.297307731424,Ambulance dispatched,Ambulance 1.0
+294,9769.784624826365,Task complete,Ambulance 1.0
+295,127.95936411180104,New patient priority A2,Region 1
+295,9769.784624826365,Ambulance dispatched,Ambulance 1.0
+295,9800.451884937494,Task complete,Ambulance 1.0
+296,147.0457799437472,New patient priority A1,Region 2
+296,9404.06029850086,Ambulance dispatched,Ambulance 2.0
+296,9807.652091879476,Task complete,Ambulance 2.0
+297,148.36039300237596,New patient priority B,Region 2
+297,9807.652091879476,Ambulance dispatched,Ambulance 2.0
+297,9828.2643155018,Task complete,Ambulance 2.0
+298,131.39209398366052,New patient priority A1,Region 1
+298,9800.451884937494,Ambulance dispatched,Ambulance 1.0
+298,9836.43291883255,Task complete,Ambulance 1.0
+299,150.14436824419738,New patient priority A1,Region 2
+299,9828.2643155018,Ambulance dispatched,Ambulance 2.0
+299,9851.254008185108,Task complete,Ambulance 2.0
+300,152.78563907292397,New patient priority B,Region 2
+300,9851.254008185108,Ambulance dispatched,Ambulance 2.0
+300,9875.593423924618,Task complete,Ambulance 2.0
+301,136.19976434362698,New patient priority A1,Region 1
+301,9836.43291883255,Ambulance dispatched,Ambulance 1.0
+301,9880.30360972312,Task complete,Ambulance 1.0
+302,156.77988237850738,New patient priority B,Region 2
+302,9875.593423924618,Ambulance dispatched,Ambulance 2.0
+302,9917.853523437594,Task complete,Ambulance 2.0
+303,140.54489367355652,New patient priority A1,Region 1
+303,9880.30360972312,Ambulance dispatched,Ambulance 1.0
+303,9924.696675401015,Task complete,Ambulance 1.0
+304,161.7798015959909,New patient priority A1,Region 2
+304,9917.853523437594,Ambulance dispatched,Ambulance 2.0
+304,9947.205878121584,Task complete,Ambulance 2.0
+305,142.73867411794822,New patient priority B,Region 1
+305,9924.696675401015,Ambulance dispatched,Ambulance 1.0
+305,9955.675281752534,Task complete,Ambulance 1.0
+306,165.2465351363589,New patient priority A2,Region 2
+306,9947.205878121584,Ambulance dispatched,Ambulance 2.0
+306,9987.977192077524,Task complete,Ambulance 2.0
