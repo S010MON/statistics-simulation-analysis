@@ -8,11 +8,19 @@ package org.ssa;
 
 import adaptedEngine.*;
 import engine.CEventList;
+import engine.Queue;
 import engine.Sink;
+import engine.Source;
 import jogging.Logger;
 
-public class Simulation
-{
+public class Simulation {
+
+    public CEventList list;
+    public Queue queue;
+    public Source source;
+    public Sink sink;
+    public Ambulance mach;
+
     /**
      * @param args the command line arguments
      */
@@ -105,7 +113,9 @@ public class Simulation
         System.out.println("Events = " + events.length);
         System.out.println("Stations = " + stations.length);
 
+        logger.setAppend(false);
         logger.log("number,time,event,station");
+        logger.setAppend(true);
         for( int i = 0; i < numbers.length; i++)
         {
             logger.log(numbers[i] + "," + times[i] + "," + events[i] + "," + stations[i]);
