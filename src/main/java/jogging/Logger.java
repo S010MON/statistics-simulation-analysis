@@ -227,6 +227,11 @@ public class Logger
         }
     }
 
+    public void setAppend(boolean value)
+    {
+        append = value;
+    }
+
     public void setOutputCsv()
     {
         CSV = true;
