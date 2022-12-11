@@ -37,7 +37,7 @@ disp(D_A1);
 
 % Create a histogram of A1 priority processing times
 figure(1)
-hist = histogram(D_A1, 100);
+hist = histogram(D_A1(:,3), 100);
 hold on;
 title("Processing Times for A1 Priority Patients");
 xlabel("Time (mins)")

@@ -25,7 +25,7 @@ public class Simulation {
         CEventList l = new CEventList();
 
 
-        int no_of_regions = 1;
+        int no_of_regions = 7;
         // A queue for each of the regions that triages patients by highest priority
         TriageQueue[] Q = new TriageQueue[no_of_regions];
         for(int i = 0; i < no_of_regions; i++)
@@ -53,7 +53,7 @@ public class Simulation {
          */
 
         // TODO - Add your shift pattern here and it will be applied to all the regions!
-        Shift[] shifts = createSchedule5();
+        Shift[] shifts = createSchedule1();
 
         Stack<Ambulance> ambulances = new Stack<>();
 
@@ -100,8 +100,21 @@ public class Simulation {
             new Shift(1380, 420),
             new Shift(420, 900),
             new Shift(900, 1380),
-            new Shift(0, 0),
-            new Shift(0, 0)
+            new Shift(1380, 420),
+            new Shift(420, 900),
+            new Shift(900, 1380),
+            new Shift(1380, 420),
+            new Shift(420, 900),
+            new Shift(900, 1380),
+            new Shift(1380, 420),
+            new Shift(420, 900),
+            new Shift(900, 1380),
+            new Shift(1380, 420),
+            new Shift(420, 900),
+            new Shift(900, 1380),
+            new Shift(1380, 420),
+            new Shift(420, 900),
+            new Shift(900, 1380)
         };
         return shifts;
     }
