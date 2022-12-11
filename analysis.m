@@ -25,25 +25,21 @@ nb_A1 = 0;
 nb_A2 = 0; 
 nb_B = 0; 
 
-A1 = [];
+v = D(:, 2);                                       % v is the second column of our data matrix
+a1 = (v == 1);                                     % a1 is v only where v == 1
+nb_A1 = v .* a1;                                   % compute vector multiplication v * a1
 
-for i = 1 : length                                  % For every element in the table
-   
-    key = data.number(i);                           % Get the event number for the element as a key  
+a2 = (v == 2);
+nb_A2 = v .* a2;
 
-    if D(key,2) == 1                                % Check priority
-        nb_A1 = nb_A1 + 1;                          % Increment encounters
-        A1 = [A1,D(key,1)];                         % Add the element in A1 list to keep track of all of them : it is our measure of interest    
-    end%if
+b = (v == 3);
+nb_B = v .* b;
 
-    if D(key,2) == 2
-        nb_A2 = nb_A2 + 1;
-    end%if
-
-    if D(key,2) == 3
-        nb_B = nb_B + 1;
-    end%if
-end%for
+D_A1 = D .* (D(:,2) == 1);
+D_A1 = D_A1(:,1);
+ind = find(sum(D_A1,2)==0);
+D_A1(ind,:) = [];
+D_A1 = round(D_A1);
 
 m1 = sum_A1/nb_A1;                                 % Mean for patients of priority A1
 m2 = sum_A2/nb_A2;                                 % Mean for patients of priority A2
@@ -53,8 +49,11 @@ disp(m1)
 disp(m2)
 disp(m3)
 
-nb_bins = nb_A1;                                   % Number of encounters
-histogram(A1,nb_bins)                              % Plotting
+
+
+nb_bins = 10;                                   % Number of bins
+hist = histogram(D_A1, 'Orientation', 'horizontal');                              % Plotting ~ ressembles normal distribution
+disp(hist.BinCounts)
 
 %% Function Definitions
 function output = priority(str)
