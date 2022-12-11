@@ -8,21 +8,12 @@ package org.ssa;
 
 import adaptedEngine.*;
 import engine.CEventList;
-import engine.Queue;
 import engine.Sink;
-import engine.Source;
 import jogging.Logger;
 
-import java.util.ArrayList;
 import java.util.Stack;
 
 public class Simulation {
-
-    public CEventList list;
-    public Queue queue;
-    public Source source;
-    public Sink sink;
-    public Ambulance mach;
 
     /**
      * @param args the command line arguments
