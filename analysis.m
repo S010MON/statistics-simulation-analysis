@@ -27,7 +27,7 @@ D( all(~D(:,2),2), : ) = [];
 
 
 % Calculate the difference between col 1 and col 2
-D(:,3) = D(:,2) - D(:,1);
+D(:,3) = (D(:,2) - D(:,1));
 disp(D);
 
 % Select all A1 priority data only
@@ -37,10 +37,10 @@ disp(D_A1);
 
 % Create a histogram of A1 priority processing times
 figure(1)
-hist = histogram(D_A1, 20);
+hist = histogram(D_A1, 100);
 hold on;
 title("Processing Times for A1 Priority Patients");
-xlabel("Time (mins?)")
+xlabel("Time (mins)")
 ylabel("No. of Patients")
 hold off;
 

@@ -8,6 +8,7 @@ package org.ssa;
 
 import adaptedEngine.*;
 import engine.CEventList;
+import engine.Queue;
 import engine.Sink;
 import jogging.Logger;
 
@@ -52,7 +53,7 @@ public class Simulation {
          */
 
         // TODO - Add your shift pattern here and it will be applied to all the regions!
-        Shift[] shifts = createSchedule1();
+        Shift[] shifts = createSchedule5();
 
         Stack<Ambulance> ambulances = new Stack<>();
 

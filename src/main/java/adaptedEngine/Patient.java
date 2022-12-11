@@ -65,11 +65,13 @@ public class Patient extends Product implements Comparable
         if(o instanceof Patient)
         {
             Patient other = (Patient) o;
-            if(this.priority == priority.A1 && other.priority != Priority.A1)
-                return 1;
-            if(this.priority != priority.A1 && other.priority == Priority.A1)
-                return -1;
-
+            if(this.priority == priority.A1 && other.priority == Priority.A1)
+            {
+                if(this.getTimes().get(0) >= other.getTimes().get(0))
+                    return 1;
+                else
+                    return -1;
+            }
             this.priority.compareTo(((Patient) o).priority);
         }
         return 0;
