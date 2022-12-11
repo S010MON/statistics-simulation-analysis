@@ -1,5 +1,5 @@
 %% Loading Data
-data = readtable("log.txt");
+data = readtable("logs/log.txt");
 length = size(data);
 length = length(1);
 
