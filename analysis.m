@@ -2,67 +2,52 @@
 data = readtable("log.txt");
 length = size(data);
 length = length(1);
-D = zeros(max(data.number), 2);
-D_creation_time = zeros(max(data.number), 1);
 
+% Create a data array where columns represent:
+% | first_time | last_time | delta_time | priority
+% with n rows, where n = number of distinct events
+D = zeros(max(data.number), 4);
 disp(size(D))
-disp(size(D_creation_time))
-
-%%
 
 for i = 1:length                                    % For every element in the table
     key = data.number(i);                           % Get the event number for the element as a key
-    D(key, 1) = D(key,1) + data.time(i);            % Add the time from this element to the cumulative value for the key
    
-    if D(key, 2) == 0                               % Check if the priority has not already been set 
-        D(key, 2) = priority(data.event(i));        % If it hasn't, then set the priority by parsing through the function
-        D_creation_time(key) = data.time(i);
+    if D(key, 4) == 0                               % Check if the priority has not already been set (i.e. unvisited)
+        D(key, 4) = priority(data.event(i));        % If it hasn't, then set the priority by parsing through the function
+        D(key, 1) = data.time(i);                   % Add the time from this element to the start_time for the key
+    else
+        D(key, 2) = data.time(i);                   % Add the time from this element to the cumulative value for the key
     end%if
 
 end%for
 
-D = [D(:,1), D_creation_time, D(:,1)-D_creation_time, D(:,2)];
+
+% Remove all rows where col 2 is zero
+D( all(~D(:,2),2), : ) = [];
+
+
+% Calculate the difference between col 1 and col 2
+D(:,3) = D(:,2) - D(:,1);
 disp(D);
 
-%%
-sum_A1 = sum(D(:,3) .* (D(:,4) == 1));               % For each priority (1, 2, 3) sum all values in the first column
-sum_A2 = sum(D(:,3) .* (D(:,4) == 2));               % that have a (1 | 2 | 3) in the second column using elementwise 
-sum_B = sum(D(:,3) .* (D(:,4) == 3));                % vector multiplication    
-
-
-%% Analysis
-nb_A1 = 0; 
-nb_A2 = 0; 
-nb_B = 0; 
-
-v = D(:, 4);                                       % v is the second column of our data matrix
-a1 = (v == 1);                                     % a1 is v only where v == 1
-nb_A1 = v .* a1;                                   % compute vector multiplication v * a1
-
-a2 = (v == 2);
-nb_A2 = v .* a2;
-
-b = (v == 3);
-nb_B = v .* b;
-
+% Select all A1 priority data only
 D_A1 = D .* (D(:,4) == 1);
-D_A1 = D_A1(:,3);
-ind = find(sum(D_A1,2) == 0);
-D_A1(ind,:) = [];
-D_A1 = round(D_A1);
+D_A1( all(~D_A1(:,2),2), : ) = [];
+disp(D_A1);
 
-m1 = sum_A1/sum(nb_A1);                                 % Mean for patients of priority A1
-m2 = sum_A2/sum(nb_A2);                                 % Mean for patients of priority A2
-m3 = sum_B/sum(nb_B);                                   % Mean for patients of priority B
+% Create a histogram of A1 priority processing times
+figure(1)
+hist = histogram(D_A1, 20);
+hold on;
+title("Processing Times for A1 Priority Patients");
+xlabel("Time (mins?)")
+ylabel("No. of Patients")
+hold off;
 
-disp(m1);
-disp(m2);
-disp(m3); 
+%% Chi Squared Test
 
-max(D_A1)
-D_counts = discretize(D_A1, max(D_A1))
-%hist_2  = histogram(D_counts);
-%disp(hist_2);
+
+%% K-S Test
                      
 
 %% Function Definitions

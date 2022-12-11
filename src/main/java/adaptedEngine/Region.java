@@ -1,7 +1,6 @@
 package adaptedEngine;
 
 import engine.CEventList;
-import engine.Product;
 import engine.ProductAcceptor;
 import engine.Source;
 
