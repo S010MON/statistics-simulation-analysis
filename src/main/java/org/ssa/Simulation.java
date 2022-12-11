@@ -11,14 +11,12 @@ import engine.CEventList;
 import engine.Sink;
 import jogging.Logger;
 
-public class Simulation
-{
+public class Simulation {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args)
-    {
-    	// Create an eventlist
+    public static void main(String[] args) {
+        // Create an eventlist
         CEventList l = new CEventList();
         // A queue for each of the regions that triages patients by highest priority
         TriageQueue q1 = new TriageQueue();
@@ -29,14 +27,16 @@ public class Simulation
         TriageQueue q6 = new TriageQueue();
         TriageQueue q7 = new TriageQueue();
 
+        TriageQueue[] queues = {q1, q2, q3, q4, q5, q6, q7};
+
         // A source for each region that generates random patients within each region
-        Region s1 = new Region(q1,l,"Region 1");
-        Region s2 = new Region(q2,l,"Region 2");
-        Region s3 = new Region(q3,l,"Region 3");
-        Region s4 = new Region(q4,l,"Region 4");
-        Region s5 = new Region(q5,l,"Region 5");
-        Region s6 = new Region(q6,l,"Region 6");
-        Region s7 = new Region(q7,l,"Region 7");
+        Region s1 = new Region(q1, l, "Region 1");
+        Region s2 = new Region(q2, l, "Region 2");
+        Region s3 = new Region(q3, l, "Region 3");
+        Region s4 = new Region(q4, l, "Region 4");
+        Region s5 = new Region(q5, l, "Region 5");
+        Region s6 = new Region(q6, l, "Region 6");
+        Region s7 = new Region(q7, l, "Region 7");
 
         // The hospital is the Sink, once a patient arrives there, they are no
         // longer our problem!
@@ -49,47 +49,49 @@ public class Simulation
          * manhattan distance from their location, to the patient, and the distance
          * to
          */
-        Ambulance ambulance11 = new Ambulance(q1,si,l,"Ambulance 1.1", Location.HOSPITAL, new Shift(1380, 420));
-        Ambulance ambulance12 = new Ambulance(q1,si,l,"Ambulance 1.2", Location.HOSPITAL, new Shift(420,  900));
-        Ambulance ambulance13 = new Ambulance(q1,si,l,"Ambulance 1.3", Location.HOSPITAL, new Shift(900, 1380));
-        Ambulance ambulance14 = new Ambulance(q1,si,l,"Ambulance 1.4", Location.HOSPITAL, new Shift(0, 0));
-        Ambulance ambulance15 = new Ambulance(q1,si,l,"Ambulance 1.5", Location.HOSPITAL, new Shift(0, 0));
+//        Ambulance ambulance11 = new Ambulance(q1, si, l, "Ambulance 1.1", Location.HOSPITAL, new Shift(1380, 420));
+//        Ambulance ambulance12 = new Ambulance(q1, si, l, "Ambulance 1.2", Location.HOSPITAL, new Shift(420, 900));
+//        Ambulance ambulance13 = new Ambulance(q1, si, l, "Ambulance 1.3", Location.HOSPITAL, new Shift(900, 1380));
+//        Ambulance ambulance14 = new Ambulance(q1, si, l, "Ambulance 1.4", Location.HOSPITAL, new Shift(0, 0));
+//        Ambulance ambulance15 = new Ambulance(q1, si, l, "Ambulance 1.5", Location.HOSPITAL, new Shift(0, 0));
+//
+//        Ambulance ambulance21 = new Ambulance(q2, si, l, "Ambulance 2.1", Location.HUB, new Shift(1380, 420));
+//        Ambulance ambulance22 = new Ambulance(q2, si, l, "Ambulance 2.2", Location.HUB, new Shift(420, 900));
+//        Ambulance ambulance23 = new Ambulance(q2, si, l, "Ambulance 2.3", Location.HUB, new Shift(900, 1380));
+//        Ambulance ambulance24 = new Ambulance(q2, si, l, "Ambulance 2.4", Location.HUB, new Shift(0, 0));
+//        Ambulance ambulance25 = new Ambulance(q2, si, l, "Ambulance 2.5", Location.HUB, new Shift(0, 0));
+//
+//        Ambulance ambulance31 = new Ambulance(q3, si, l, "Ambulance 3.1", Location.HUB, new Shift(1380, 420));
+//        Ambulance ambulance32 = new Ambulance(q3, si, l, "Ambulance 3.2", Location.HUB, new Shift(420, 900));
+//        Ambulance ambulance33 = new Ambulance(q3, si, l, "Ambulance 3.3", Location.HUB, new Shift(900, 1380));
+//        Ambulance ambulance34 = new Ambulance(q3, si, l, "Ambulance 3.4", Location.HUB, new Shift(0, 0));
+//        Ambulance ambulance35 = new Ambulance(q3, si, l, "Ambulance 3.5", Location.HUB, new Shift(0, 0));
+//
+//        Ambulance ambulance41 = new Ambulance(q4, si, l, "Ambulance 4.1", Location.HUB, new Shift(1380, 420));
+//        Ambulance ambulance42 = new Ambulance(q4, si, l, "Ambulance 4.2", Location.HUB, new Shift(420, 900));
+//        Ambulance ambulance43 = new Ambulance(q4, si, l, "Ambulance 4.3", Location.HUB, new Shift(900, 1380));
+//        Ambulance ambulance44 = new Ambulance(q4, si, l, "Ambulance 4.4", Location.HUB, new Shift(0, 0));
+//        Ambulance ambulance45 = new Ambulance(q4, si, l, "Ambulance 4.5", Location.HUB, new Shift(0, 0));
+//
+//        Ambulance ambulance51 = new Ambulance(q5, si, l, "Ambulance 5.1", Location.HUB, new Shift(1380, 420));
+//        Ambulance ambulance52 = new Ambulance(q5, si, l, "Ambulance 5.2", Location.HUB, new Shift(420, 900));
+//        Ambulance ambulance53 = new Ambulance(q5, si, l, "Ambulance 5.3", Location.HUB, new Shift(900, 1380));
+//        Ambulance ambulance54 = new Ambulance(q5, si, l, "Ambulance 5.4", Location.HUB, new Shift(0, 0));
+//        Ambulance ambulance55 = new Ambulance(q5, si, l, "Ambulance 5.5", Location.HUB, new Shift(0, 0));
+//
+//        Ambulance ambulance61 = new Ambulance(q6, si, l, "Ambulance 6.1", Location.HUB, new Shift(1380, 420));
+//        Ambulance ambulance62 = new Ambulance(q6, si, l, "Ambulance 6.2", Location.HUB, new Shift(420, 900));
+//        Ambulance ambulance63 = new Ambulance(q6, si, l, "Ambulance 6.3", Location.HUB, new Shift(900, 1380));
+//        Ambulance ambulance64 = new Ambulance(q6, si, l, "Ambulance 6.4", Location.HUB, new Shift(0, 0));
+//        Ambulance ambulance65 = new Ambulance(q6, si, l, "Ambulance 6.5", Location.HUB, new Shift(0, 0));
+//
+//        Ambulance ambulance71 = new Ambulance(q7, si, l, "Ambulance 7.1", Location.HUB, new Shift(1380, 420));
+//        Ambulance ambulance72 = new Ambulance(q7, si, l, "Ambulance 7.2", Location.HUB, new Shift(420, 900));
+//        Ambulance ambulance73 = new Ambulance(q7, si, l, "Ambulance 7.3", Location.HUB, new Shift(900, 1380));
+//        Ambulance ambulance74 = new Ambulance(q7, si, l, "Ambulance 7.4", Location.HUB, new Shift(0, 0));
+//        Ambulance ambulance75 = new Ambulance(q7, si, l, "Ambulance 7.5", Location.HUB, new Shift(0, 0));
 
-        Ambulance ambulance21 = new Ambulance(q2,si,l,"Ambulance 2.1", Location.HUB, new Shift(1380, 420));
-        Ambulance ambulance22 = new Ambulance(q2,si,l,"Ambulance 2.2", Location.HUB, new Shift(420,  900));
-        Ambulance ambulance23 = new Ambulance(q2,si,l,"Ambulance 2.3", Location.HUB, new Shift(900, 1380));
-        Ambulance ambulance24 = new Ambulance(q2,si,l,"Ambulance 2.4", Location.HUB, new Shift(0, 0));
-        Ambulance ambulance25 = new Ambulance(q2,si,l,"Ambulance 2.5", Location.HUB, new Shift(0, 0));
-
-        Ambulance ambulance31 = new Ambulance(q3,si,l,"Ambulance 3.1", Location.HUB, new Shift(1380, 420));
-        Ambulance ambulance32 = new Ambulance(q3,si,l,"Ambulance 3.2", Location.HUB, new Shift(420,  900));
-        Ambulance ambulance33 = new Ambulance(q3,si,l,"Ambulance 3.3", Location.HUB, new Shift(900, 1380));
-        Ambulance ambulance34 = new Ambulance(q3,si,l,"Ambulance 3.4", Location.HUB, new Shift(0, 0));
-        Ambulance ambulance35 = new Ambulance(q3,si,l,"Ambulance 3.5", Location.HUB, new Shift(0, 0));
-
-        Ambulance ambulance41 = new Ambulance(q4,si,l,"Ambulance 4.1", Location.HUB, new Shift(1380, 420));
-        Ambulance ambulance42 = new Ambulance(q4,si,l,"Ambulance 4.2", Location.HUB, new Shift(420,  900));
-        Ambulance ambulance43 = new Ambulance(q4,si,l,"Ambulance 4.3", Location.HUB, new Shift(900, 1380));
-        Ambulance ambulance44 = new Ambulance(q4,si,l,"Ambulance 4.4", Location.HUB, new Shift(0, 0));
-        Ambulance ambulance45 = new Ambulance(q4,si,l,"Ambulance 4.5", Location.HUB, new Shift(0, 0));
-
-        Ambulance ambulance51 = new Ambulance(q5,si,l,"Ambulance 5.1", Location.HUB, new Shift(1380, 420));
-        Ambulance ambulance52 = new Ambulance(q5,si,l,"Ambulance 5.2", Location.HUB, new Shift(420,  900));
-        Ambulance ambulance53 = new Ambulance(q5,si,l,"Ambulance 5.3", Location.HUB, new Shift(900, 1380));
-        Ambulance ambulance54 = new Ambulance(q5,si,l,"Ambulance 5.4", Location.HUB, new Shift(0, 0));
-        Ambulance ambulance55 = new Ambulance(q5,si,l,"Ambulance 5.5", Location.HUB, new Shift(0, 0));
-
-        Ambulance ambulance61 = new Ambulance(q6,si,l,"Ambulance 6.1", Location.HUB, new Shift(1380, 420));
-        Ambulance ambulance62 = new Ambulance(q6,si,l,"Ambulance 6.2", Location.HUB, new Shift(420,  900));
-        Ambulance ambulance63 = new Ambulance(q6,si,l,"Ambulance 6.3", Location.HUB, new Shift(900, 1380));
-        Ambulance ambulance64 = new Ambulance(q6,si,l,"Ambulance 6.4", Location.HUB, new Shift(0, 0));
-        Ambulance ambulance65 = new Ambulance(q6,si,l,"Ambulance 6.5", Location.HUB, new Shift(0, 0));
-
-        Ambulance ambulance71 = new Ambulance(q7,si,l,"Ambulance 7.1", Location.HUB, new Shift(1380, 420));
-        Ambulance ambulance72 = new Ambulance(q7,si,l,"Ambulance 7.2", Location.HUB, new Shift(420,  900));
-        Ambulance ambulance73 = new Ambulance(q7,si,l,"Ambulance 7.3", Location.HUB, new Shift(900, 1380));
-        Ambulance ambulance74 = new Ambulance(q7,si,l,"Ambulance 7.4", Location.HUB, new Shift(0, 0));
-        Ambulance ambulance75 = new Ambulance(q7,si,l,"Ambulance 7.5", Location.HUB, new Shift(0, 0));
+        createSchedule1(queues, si, l);
 
         // start the eventlist
         l.start(2000); // 2000 is maximum time
@@ -106,11 +108,69 @@ public class Simulation
         System.out.println("Stations = " + stations.length);
 
         logger.log("number,time,event,station");
-        for( int i = 0; i < numbers.length; i++)
-        {
+        for (int i = 0; i < numbers.length; i++) {
             logger.log(numbers[i] + "," + times[i] + "," + events[i] + "," + stations[i]);
         }
 
     }
-    
+
+    public static void createSchedule1(TriageQueue[] queues, Sink si, CEventList l) {
+        for (int i = 0; i < 7; i++) {
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".1", Location.HUB, new Shift(1380, 420));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".2", Location.HUB, new Shift(420, 900));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".3", Location.HUB, new Shift(900, 1380));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".4", Location.HUB, new Shift(0, 0));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".5", Location.HUB, new Shift(0, 0));
+        }
+    }
+
+
+    public static void createSchedule2(TriageQueue[] queues, Sink si, CEventList l) {
+        for (int i = 0; i < 7; i++) {
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".1", Location.HUB, new Shift(1380, 420));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".2", Location.HUB, new Shift(420, 900));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".3", Location.HUB, new Shift(900, 1380));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".4", Location.HUB, new Shift(780, 1020));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".5", Location.HUB, new Shift(1260, 60 ));
+        }
+    }
+
+    public static void createSchedule3(TriageQueue[] queues, Sink si, CEventList l) {
+        for (int i = 0; i < 7; i++) {
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".1", Location.HUB, new Shift(1380, 420));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".2", Location.HUB, new Shift(600, 1080));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".3", Location.HUB, new Shift(1080, 120));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".4", Location.HUB, new Shift(420, 660));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".5", Location.HUB, new Shift(960, 120));
+        }
+    }
+
+    public static void createSchedule4(TriageQueue[] queues, Sink si, CEventList l) {
+        for (int i = 0; i < 7; i++) {
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".1", Location.HUB, new Shift(1380, 420));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".2", Location.HUB, new Shift(960, 0));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".3", Location.HUB, new Shift(420, 660));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".4", Location.HUB, new Shift(600, 840));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".5", Location.HUB, new Shift(780, 120));
+        }
+    }
+
+    public static void createSchedule5(TriageQueue[] queues, Sink si, CEventList l) {
+        for (int i = 0; i < 7; i++) {
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".1", Location.HUB, new Shift(1380, 420));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".2", Location.HUB, new Shift(420, 900));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".3", Location.HUB, new Shift(900, 1380));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".4", Location.HUB, new Shift(660, 1140));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".5", Location.HUB, new Shift(420, 900));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".6", Location.HUB, new Shift(900, 1380));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".7", Location.HUB, new Shift(1320, 120));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".8", Location.HUB, new Shift(1200, 0));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".9", Location.HUB, new Shift(1020,60 ));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".10", Location.HUB, new Shift(780,1020));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".11", Location.HUB, new Shift(840, 1320));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".12", Location.HUB, new Shift(420, 660));
+            new Ambulance(queues[i], si, l, "Ambulance " + i + ".13", Location.HUB, new Shift(600, 840));
+        }
+    }
+
 }
