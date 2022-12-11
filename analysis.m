@@ -25,9 +25,9 @@ D = [D(:,1), D_creation_time, D(:,1)-D_creation_time, D(:,2)];
 disp(D);
 
 %%
-sum_A1 = sum(D(:,1) .* (D(:,4) == 1));               % For each priority (1, 2, 3) sum all values in the first column
-sum_A2 = sum(D(:,1) .* (D(:,4) == 2));               % that have a (1 | 2 | 3) in the second column using elementwise 
-sum_B = sum(D(:,1) .* (D(:,4) == 3));                % vector multiplication    
+sum_A1 = sum(D(:,3) .* (D(:,4) == 1));               % For each priority (1, 2, 3) sum all values in the first column
+sum_A2 = sum(D(:,3) .* (D(:,4) == 2));               % that have a (1 | 2 | 3) in the second column using elementwise 
+sum_B = sum(D(:,3) .* (D(:,4) == 3));                % vector multiplication    
 
 
 %% Analysis
@@ -39,7 +39,6 @@ v = D(:, 4);                                       % v is the second column of o
 a1 = (v == 1);                                     % a1 is v only where v == 1
 nb_A1 = v .* a1;                                   % compute vector multiplication v * a1
 
-
 a2 = (v == 2);
 nb_A2 = v .* a2;
 
@@ -47,8 +46,8 @@ b = (v == 3);
 nb_B = v .* b;
 
 D_A1 = D .* (D(:,4) == 1);
-D_A1 = D_A1(:,1);
-ind = find(sum(D_A1,2)==0);
+D_A1 = D_A1(:,3);
+ind = find(sum(D_A1,2) == 0);
 D_A1(ind,:) = [];
 D_A1 = round(D_A1);
 
@@ -58,14 +57,13 @@ m3 = sum_B/sum(nb_B);                                   % Mean for patients of p
 
 disp(m1);
 disp(m2);
-disp(m3);
+disp(m3); 
 
-max(D_A1) 
-
-D_counts = discretize(D_A1, 14) 
-%hist_2  = histogram(D_counts)
-
-hist = histogram(D_A1);                              % Plotting ~ ressembles normal distribution
+max(D_A1)
+D_counts = discretize(D_A1, max(D_A1))
+%hist_2  = histogram(D_counts);
+%disp(hist_2);
+                     
 
 %% Function Definitions
 function output = priority(str)
